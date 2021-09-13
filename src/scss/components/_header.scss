@@ -1,1 +1,74 @@
-//
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;;
+    &__wrapper {
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+    }
+    &__logo {  
+
+    }
+    &__delivery {
+        max-width: 171px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000;
+    }
+    &__timetable {
+        font-size: 18px;
+        line-height: 22px;
+        span {
+            font-weight: bold; 
+        }
+    }
+    &__search {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        input {
+            padding: 12px 14px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            outline: none;
+        }  
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/lupa.png);
+            width: 19px;
+            height: 19px;
+            background-size: contain;
+            background-position: center;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 11px;
+            pointer-events: none;
+        }
+    }
+    &__contacts {
+
+    }
+
+    &__bottom {
+        background-color: #1880E8;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        text-transform: lowercase;
+        a {
+            color: #FFFFFF;
+        }
+    } 
+}
