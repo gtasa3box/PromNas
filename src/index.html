@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.css">
 </head>
 
 <body>
@@ -32,6 +33,25 @@
         "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
     });
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script>
+    (function($){
+        $(window).on("load",function(){
+            $("#horizontal").mCustomScrollbar({
+              axis:"x",
+              theme:"my-theme"
+            });
+        });
+    })(jQuery);
+</script>
+<script>
+  const phoneInputFields = document.querySelector("#number");
+  const phoneInputs = window.intlTelInput(phoneInputFields, {
+    initialCountry: "ru",
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+  });
+</script>
 </body>
 
 </html>

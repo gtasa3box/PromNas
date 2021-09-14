@@ -1,0 +1,41 @@
+.delivery {
+    padding-top: 132px ;
+    position: relative;
+    &:before {
+        content: '';
+        background-image: url(../img/delivery/map.png);
+        position: absolute;
+        top: 132px;
+        right: 0;
+        width: 1144px;
+        height: 891px;
+        pointer-events: none;
+    }
+    .wrapper {
+        position: relative;
+        z-index: 2;
+    }
+    &__content {
+        margin-top: 170px;
+    }
+    &__city {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 520px;
+        max-width: 454px;
+        a {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-decoration-line: underline;
+            color: rgba(0, 0, 0, 0.8);
+            margin-bottom: 40px;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

@@ -1,6 +1,4 @@
 .contacts {
-    display: flex;
-    flex-direction: column;
     padding-left: 33px;
     &__number {
         font-style: normal;
@@ -60,5 +58,12 @@
         &:hover {
             opacity: 0.8;
         }
+    }
+    &__adress {
+        font-family: 'Jost',sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14.116px;
+        line-height: 20px;
     }
 }
