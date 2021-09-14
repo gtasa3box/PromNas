@@ -1,0 +1,72 @@
+.product {
+    padding: 60px;
+    &__content {
+        margin-top: 50px;
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 156.9%;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: #000000;
+        }
+        .button {
+            cursor: pointer;
+        }
+    }
+    &__imgtext {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img {
+        display: block;
+        width: 377px;
+        height: 377px;
+        background-image: url(../img/production/1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__list {
+        max-width: 649px;
+        p {
+            text-indent: 1.3em;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    &__text {
+        max-width: 1026px;
+        margin-bottom: 60px;
+    }
+    &__popular {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .popular {
+        &__card {
+            width: 20%;
+            position: relative;
+        }
+    }
+    &__elem {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}

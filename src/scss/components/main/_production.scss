@@ -1,0 +1,19 @@
+.production {
+    padding-bottom: 137px;
+    &__title {
+        margin-bottom: 113px;
+    }
+    &__content {
+        display: flex;
+    }
+    &__navigate {
+        width: 24%;
+    }
+    &__product {
+        width: 76%;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+        margin-left: -1%;
+        position: relative;
+    }
+}
