@@ -29,6 +29,7 @@
         border-radius: 267.5px 267.5px 80px 80px;
         padding: 140px 0 60px;
         transition: 0.4s ease;
+        pointer-events: none;
     }
     &__card {
         width: 21%;
@@ -46,6 +47,7 @@
         &:hover {
             .card-hover {
                 bottom: 0;
+                pointer-events: auto;
             }
         }
     }
