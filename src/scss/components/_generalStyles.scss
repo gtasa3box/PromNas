@@ -52,4 +52,26 @@
       width: 647px;
     }
   }
+  &_full {
+    &:before {
+      width: 100%;
+    }
+  }
+  &__contain {
+
+  }
+  &__filter {
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135.69%;
+    letter-spacing: 0.01em;
+    text-decoration-line: underline;
+    color: #000000;
+    margin-right: 40px;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
 }
