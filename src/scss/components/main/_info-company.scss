@@ -12,6 +12,18 @@
         height: 1000px;
         pointer-events: none;
     }
+    &_backcall {
+        &:before {
+            content: '';
+            background-image: url(../img/backcall/1.png);
+            position: absolute;
+            top: 415px;
+            left: 0;
+            width: 481px;
+            height: 504px;
+            pointer-events: none;
+        }
+    }
     &__content {
         margin-top: 113px;
         display: flex;
