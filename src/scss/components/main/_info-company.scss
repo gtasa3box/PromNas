@@ -13,6 +13,7 @@
         pointer-events: none;
     }
     &_backcall {
+        padding-top: 0;
         &:before {
             content: '';
             background-image: url(../img/backcall/1.png);
@@ -29,6 +30,9 @@
         display: flex;
         justify-content: space-between;
         z-index: 2;
+        &_backcall {
+            margin-top: 0;  
+        }
     }
     &__form {
         width: 48%;

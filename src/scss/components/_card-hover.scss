@@ -1,0 +1,42 @@
+.card-hover {
+    background: linear-gradient(28.38deg, #1880E8 0%, #5AADFF 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        max-width: 268px;
+    }
+    &__info {
+        max-width: 268px;
+        font-family: 'Noto Sans',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 190%;
+        text-align: center;
+        letter-spacing: 0.015em;
+        color: #FFFFFF;
+
+    }
+    &__button {
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 190%;
+        /* or 30px */
+
+        text-align: center;
+        letter-spacing: 0.015em;
+    }
+}
