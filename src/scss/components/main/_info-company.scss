@@ -1,6 +1,6 @@
 .info-company {
     padding-top: 132px;
-    padding-bottom: 130px;
+    padding-bottom: 160px;
     position: relative;
     &:before {
         content: '';
@@ -103,6 +103,20 @@
         bottom: 30px;
         left: 35px;
         background: #3A9DFF;
-        border-radius: 7.84223px;
+        border-radius: 7px;
+        padding: 20px;
+        max-width: 338px;  
+    }
+    &__contacts {
+        .contacts__number {
+            margin-left: 40px;
+        }
+        .contacts__mail {
+            margin-left: 40px;
+        }
+        .contacts__adress {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
     }
 }

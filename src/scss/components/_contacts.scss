@@ -1,12 +1,10 @@
 .contacts {
-    padding-left: 33px;
     &__number {
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
         line-height: 24px;
         color: #000000;
-        margin-bottom: 13px;
         position: relative;
         transition: 0.3s ease;
         a {
@@ -65,5 +63,79 @@
         font-weight: 500;
         font-size: 14.116px;
         line-height: 20px;
+    }
+    &_map {
+        .contacts__number {
+            font-family: 'Jost',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+            &::before {
+                display: none;
+            }
+            &::after {
+                background-image: url(../img/phone-white.png); 
+                width: 14.7px;
+                height: 14.7px;
+                left: -28px;
+                background-size: contain;
+            }
+        }
+        .contacts__mail {
+            font-family: 'Jost',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+            text-decoration: none;
+            &::after {
+                background-image: url(../img/mail-white.png); 
+                width: 19.6px;
+                height: 19.6px;
+                left: -28px;
+                background-size: contain;
+            }
+        }
+        .contacts__adress {
+            font-family: 'Jost',sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14.116px;
+            line-height: 20px;
+            color: #FFFFFF;
+            position: relative;
+            &:after {
+                content: '';
+                position: absolute;
+                background-image: url(../img/locate-white.png);
+                background-size: contain;
+                width: 18.8px;
+                height: 18.8px;
+                background-position: center;
+                background-repeat: no-repeat;
+                left: -28px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &_footer {
+        .contacts__number {
+            font-size: 16px;
+            line-height: 23px;
+        }  
+        .contacts__mail {
+            font-size: 16px;
+            line-height: 23px;
+            text-decoration-line: underline;
+        }
+        .contacts__adress {
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 23px;
+        }
     }
 }

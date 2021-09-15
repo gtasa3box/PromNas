@@ -66,6 +66,10 @@
     &__contacts {
         display: flex;
         flex-direction: column;
+        padding-left: 33px;
+        .contacts__number {
+            margin-bottom: 13px;
+        }
     }
 
     &__bottom {
