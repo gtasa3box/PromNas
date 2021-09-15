@@ -52,9 +52,18 @@
       width: 647px;
     }
   }
-  &_full {
+  &_none {
     &:before {
-      width: 100%;
+      display: none;
+    }
+  }
+  &_production {
+      &:before {
+        content: '';
+        position: absolute;
+        border: 3px solid #236FBA;
+        width: 100%;
+        bottom: -36px;
     }
   }
   &__contain {
