@@ -74,6 +74,7 @@
             width: 17px;
             height: 8px;
             transition: 0.3s ease;
+            cursor: pointer;
             &.active{
                 transform: rotate(180deg);
             }
@@ -107,7 +108,7 @@
         }
         .title__info-hidden {
             position: relative;
-            padding-bottom: 40px;
+            padding-bottom: 30px;
         }
     }
 }

@@ -10,4 +10,74 @@
         height: 574px;
         pointer-events: none;
     }
+    &__sort {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__view {
+        display: flex;
+        a {
+            display: block;
+            height: 52px;
+            width: 52px;
+            border: 1px solid #000000;
+            cursor: pointer;
+            background-color: white;
+            transition: 0.3s ease;
+            &:before {
+                content: '';
+                position: absolute;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 33px;
+                height: 33px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .grid-view {
+            margin-right: 20px;
+            position: relative;
+            &:before {
+                background-image: url(../img/types-list/grid.png); 
+            }
+            &.active {
+                background-color: #1189FF;
+                border-color: #1189FF;
+                &:before {
+                    filter: invert(100%);
+                }
+            }
+        }
+        .list-view {
+            margin-right: 20px;
+            position: relative;
+            &:before {
+                background-image: url(../img/types-list/list.png);
+                filter: invert(100%);
+            }
+            &.active {
+                background-color: #1189FF;
+                border-color: #1189FF;
+                &:before {
+                    filter: none;
+                }
+            }
+        }
+    }
+    &__selectsort {
+        display: flex;
+        align-items: center;
+        p{  
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(0, 0, 0, 0.7);
+            margin-right: 50px;
+        }
+    }
 }
