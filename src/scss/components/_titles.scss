@@ -44,6 +44,11 @@
             width: 100%;
             bottom: -36px;
         }
+        &-info {
+            &:before {
+                bottom: -14px;
+            } 
+        }
     }
     &__filter {
         font-family: 'Montserrat',sans-serif;
@@ -72,6 +77,37 @@
             &.active{
                 transform: rotate(180deg);
             }
+        }
+    }
+    &__info {
+        margin-top: 40px;
+        font-family: 'Noto Sans',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 156.9%;
+        color: rgba(0, 0, 0, 0.7);
+        p {
+            max-width: 1047px;
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 18px;
+            color: #000000;
+            margin: 28px 0;
+        }
+        ol {
+            counter-reset:  info-title;
+        }
+        li {
+            &::before {
+                content: counter(info-title) '. ';
+                counter-increment: info-title;
+            }
+        }
+        .title__info-hidden {
+            position: relative;
+            padding-bottom: 40px;
         }
     }
 }

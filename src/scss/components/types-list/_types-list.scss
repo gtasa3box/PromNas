@@ -1,3 +1,13 @@
 .types-list {
-    
+    position: relative;
+    &:before {
+        content: '';
+        background-image: url(../img/types-list/back.png);
+        position: absolute;
+        top: -10px;
+        left: -30px;
+        width: 377px;
+        height: 574px;
+        pointer-events: none;
+    }
 }
