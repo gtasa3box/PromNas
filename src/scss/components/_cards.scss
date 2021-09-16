@@ -60,3 +60,76 @@
         }
     }
 }
+
+.catalog-card {
+    position: relative;
+    width: 30%;
+    max-width: 355px;
+    min-width: 355px;
+    border: 1px solid #000000;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    text-align: center;
+    &::before {
+        content: '';
+        background-image: url(../img/eye.svg);
+        background-size: 25.67px 18.67px;
+        position: absolute;
+        top: 27px;
+        left: 27px;
+        width: 25.67px;
+        height: 18.67px;
+    }
+    &__img {
+        margin-top: 37px;
+        width: 320px;
+        height: 261px;
+        display: block;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__for {
+        margin: 15px 0 13px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    &__title {
+        max-width: 219px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+    }
+    &__price {
+        margin: 22px 0 55px;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 27px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #1189FF;
+        text-shadow: 0px 0px 20px rgba(17, 137, 255, 0.3);
+    }
+    &__button {
+        position: absolute;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.055em;
+        bottom: -22px;
+        padding: 12px 36px 11px;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
