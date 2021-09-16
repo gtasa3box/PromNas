@@ -20,8 +20,7 @@ $(document).ready(function(){
   $('.select-sort').select2({
     language: "ru",
     minimumResultsForSearch: -1,
-    width: '220px',
-    hight: '52px'
+    width: '220px'
   });
 });
 //select-end
