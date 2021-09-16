@@ -23,64 +23,18 @@
 
 //scroll custom-end
 
-.title {
-  font-family: 'Jost', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 52px;
-  text-transform: uppercase;
-  color: #000000;
+//background-product
+.img-water {
   position: relative;
-  &_white {
-    color: white;
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    border: 3px solid #236FBA;
-    width: 445px;
-    bottom: -36px;
-  }
-  &_middle {
     &:before {
-      width: 597px;
-    }
-  }
-  &_big {
-    &:before {
-      width: 647px;
-    }
-  }
-  &_none {
-    &:before {
-      display: none;
-    }
-  }
-  &_production {
-      &:before {
-        content: '';
-        position: absolute;
-        border: 3px solid #236FBA;
-        width: 100%;
-        bottom: -36px;
-    }
-  }
-  &__contain {
-
-  }
-  &__filter {
-    font-family: 'Montserrat',sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 135.69%;
-    letter-spacing: 0.01em;
-    text-decoration-line: underline;
-    color: #000000;
-    margin-right: 40px;
-    &:hover {
-      opacity: 0.8;
-    }
+      content: '';
+      background-image: url(../img/types-equipment/back.png);
+      position: absolute;
+      top: 252px;
+      left: 0;
+      width: 100%;
+      height: 1993px;
+      pointer-events: none;
   }
 }
+//background-product-end

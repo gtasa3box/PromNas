@@ -11,6 +11,7 @@
 @import "./components/scrollbox";
 @import "./components/breadcrumbs";
 @import "./components/card-hover";
+@import "./components/titles";
 
 @import "./components/header";
 @import "./components/footer";
@@ -24,4 +25,8 @@
 
 //types-equipment
 @import "./components/types-equipment/types-product";
+//application-area
+@import "./components/application-area/application";
+//types-list
+@import "./components/types-list/types-list";
 
