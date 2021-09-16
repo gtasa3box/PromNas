@@ -23,6 +23,14 @@ $(document).ready(function(){
     width: '220px'
   });
 });
+
+$(document).ready(function(){
+  $('.select-charact').select2({
+    language: "ru",
+    minimumResultsForSearch: -1,
+    width: '100%'
+  });
+});
 //select-end
 
 //view

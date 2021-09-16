@@ -1,0 +1,86 @@
+.filters {
+    &__title {
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 156.9%;
+        color: #000000;
+        position: relative;
+        text-transform: uppercase;
+        &:before {
+            content: '';
+            position: absolute;
+            border: 2px solid #236FBA;
+            width: 100%;
+            bottom: -14px;
+        }
+    }
+    .select2-container {
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    &__charact {
+        margin-top: 42px;
+        margin-bottom: 50px;
+    }
+    &__search {
+        font-family: 'Montserrat',sans-serif;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(0, 0, 0, 0.7);
+        position: relative;
+        margin-top: 42px;
+        margin-bottom: 50px;
+        input {
+            padding: 12px 18px 14px;
+            background: #FFFFFF;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            outline: none;
+            width: 100%;
+            height: 43px;
+            &:focus {
+                border: 1px solid #000000ab;
+            }
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/lupa.png);
+            width: 19px;
+            height: 19px;
+            background-size: contain;
+            background-position: center;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 11px;
+            pointer-events: none;
+            transition: 0.3s ease;
+        }
+        &:hover {
+            &:before {
+                opacity: 0.8;
+            }
+        }  
+    }
+    &__categories {
+        margin-top: 54px;
+        margin-bottom: 50px;
+        p {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__scope {
+        margin-top: 54px;
+        p {
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

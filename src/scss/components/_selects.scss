@@ -1,27 +1,27 @@
-.types-list__selectsort {
-    .select2-container--default .select2-selection--single {
-        background-color: #fff;
-        border: 1px solid #000000;
-        border-radius: 0;
-        height: 52px;
-        font-family: 'Montserrat',sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 156.9%;
-        color: rgba(0, 0, 0, 0.8);
-        display: flex;
-        align-items: center;
-    }
-    .select2 .select2-container .select2-container--default {
-        width: 220px;
-    }
-    .select2-container--default .select2-selection--single .select2-selection__arrow {
-        top: 50%;
-        transform: translateY(-50%);
-        right: 10px;
-    }
-    .select2-container .select2-selection--single .select2-selection__rendered {
-        padding-left: 18px;
-    }
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #000000;
+    border-radius: 0;
+    height: 52px;
+    font-family: 'Montserrat',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 156.9%;
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
 }
+.select2 .select2-container .select2-container--default {
+    width: 220px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 18px;
+}
+
