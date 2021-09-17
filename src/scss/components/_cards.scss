@@ -127,9 +127,59 @@
         line-height: 22px;
         letter-spacing: 0.055em;
         bottom: -22px;
-        padding: 12px 36px 11px;
+        padding: 12px 0 11px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 46px;
+        width: 184px;
         &:hover {
             opacity: 1;
+        }
+    }
+    &__center {
+
+    }
+    &__info {
+        display: none;
+    }
+    &.active {
+        width: 100%;
+        max-width: none;
+        min-width: initial;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-around;
+        .catalog-card {
+            &__button {
+                position: relative;
+                bottom: initial;
+                left: initial;
+                transform: translateX(0);
+            }
+            &__img {
+                margin-top: 0;
+            }
+            &__for {
+                margin-top: 0;
+            }
+            &__info {
+                display: block;
+                max-width: 302px;
+                font-family: 'Noto Sans',sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 156.9%;
+                color: #000000;
+            }
+            &__title {
+                max-width: 370px;
+                text-align: left;
+            }
+            &__price {
+                text-align: left;
+                margin: 23px 0;
+            }
         }
     }
 }
