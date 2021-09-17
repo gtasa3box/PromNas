@@ -40,6 +40,13 @@ $('.view-change').on('click', function(){
   // $('.product__elem').removeClass('active')
   // $($(this).data('target')).addClass('active')
 });
+
+$('.grid-view').on('click', function(){
+  $('.catalog-card').removeClass('active')
+});
+$('.list-view').on('click', function(){
+  $('.catalog-card').addClass('active')
+});
 //view- navigate - end
 
     

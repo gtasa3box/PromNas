@@ -148,7 +148,9 @@
         min-width: initial;
         flex-direction: row;
         text-align: left;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+        padding-right: 78px;
         .catalog-card {
             &__button {
                 position: relative;
@@ -164,13 +166,14 @@
             }
             &__info {
                 display: block;
-                max-width: 302px;
+                max-width: 268px;
                 font-family: 'Noto Sans',sans-serif;
                 font-style: normal;
                 font-weight: normal;
                 font-size: 16px;
                 line-height: 156.9%;
                 color: #000000;
+                flex-grow: 1;
             }
             &__title {
                 max-width: 370px;
@@ -179,6 +182,9 @@
             &__price {
                 text-align: left;
                 margin: 23px 0;
+            }
+            &__center {
+                flex-grow: 1;
             }
         }
     }
