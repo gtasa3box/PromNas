@@ -19,17 +19,29 @@
     }
     &_middle {
         &:before {
-        width: 597px;
+            width: 597px;
         }
     }
     &_big {
         &:before {
-        width: 647px;
+            width: 647px;
+        }
+    }
+    &_company {
+        &:before {
+            width: 312px;
+            bottom: -22px;
+        }
+    }
+    &_certificates {
+        &:before {
+            width: 644px;
+            bottom: -22px;
         }
     }
     &_none {
         &:before {
-        display: none;
+            display: none;
         }
     }
     &_production {
