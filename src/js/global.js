@@ -37,8 +37,6 @@ $(document).ready(function(){
 $('.view-change').on('click', function(){
   $('.view-change').removeClass('active')
   $(this).addClass('active')
-  // $('.product__elem').removeClass('active')
-  // $($(this).data('target')).addClass('active')
 });
 
 $('.grid-view').on('click', function(){
