@@ -1,0 +1,32 @@
+.partners {
+    padding-bottom: 150px;
+    &__title {
+        margin-bottom: 102px;
+    }
+    &__content {
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    &__scrollbox {
+        display: flex;
+        padding-bottom: 84px;
+    }
+    &__card {
+        width: 355px;
+        height: 355px;
+        border: 1px solid #000000;
+        border-radius: 30px;
+        flex: none;
+        margin-right: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__img {
+        width: 324px;
+        height: 184px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

@@ -37,14 +37,24 @@
         });
     })(jQuery);
 </script>
-<!-- <script>
+<script>
+  (function($){
+      $(window).on("load",function(){
+          $("#horizontal2").mCustomScrollbar({
+            axis:"x",
+            theme:"my-theme"
+          });
+      });
+  })(jQuery);
+</script>
+<script>
   const phoneInputFields = document.querySelector("#number");
   const phoneInputs = window.intlTelInput(phoneInputFields, {
     initialCountry: "ru",
     utilsScript:
       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
   });
-</script> -->
+</script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/i18n/ru.min.js" integrity="sha512-7LPxZLWcYpSAJlgg7NwBJNISWQllTH2TRHkzfUOT4hEjsOkeD3MErbjU1sQiapxtt1ntozr8y02WlnzivEPhRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>

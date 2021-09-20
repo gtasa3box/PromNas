@@ -39,6 +39,11 @@
             bottom: -22px;
         }
     }
+    &_partners {
+        &:before {
+            width: 493px;
+        }
+    }
     &_none {
         &:before {
             display: none;
