@@ -42,6 +42,19 @@
     &_partners {
         &:before {
             width: 493px;
+            bottom: -22px;
+        }
+    }
+    &_contact {
+        &:before {
+            width: 529px;
+            bottom: -22px;
+        }
+    }
+    &_basket {
+        &:before {
+            width: 407px;
+            bottom: -22px;
         }
     }
     &_none {

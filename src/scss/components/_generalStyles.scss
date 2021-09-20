@@ -36,5 +36,12 @@
       height: 1993px;
       pointer-events: none;
   }
+  &_contact {
+    &:before {
+      top: 220px;
+      background-image: url(../img/contact/back.png);
+      height: 1040px;
+    }
+  }
 }
 //background-product-end

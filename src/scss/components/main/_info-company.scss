@@ -29,6 +29,7 @@
         margin-top: 113px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         z-index: 2;
         &_backcall {
             margin-top: 0;  
@@ -96,7 +97,7 @@
         width: 48%;
     }
     &__smalltitle {
-        font-family: Montserrat;
+        font-family: 'Montserrat',sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -133,6 +134,36 @@
         .contacts__adress {
             margin-left: 40px;
             margin-top: 20px;
+        }
+    }
+    &__mapfull {
+        width: 48%;
+    }
+    &__mapimg {
+        display: block;
+        background-image: url(../img/contact/map.png);
+        width: 749px;
+        height: 400px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &__city {
+        width: 100%;
+        margin-top: 140px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-height: 192px;
+        a {
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            text-decoration-line: underline;
+            color: rgba(0, 0, 0, 0.8);
+            width: 20%;
+            margin-bottom: 40px;
         }
     }
 }
