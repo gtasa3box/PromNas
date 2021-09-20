@@ -31,6 +31,14 @@ $(document).ready(function(){
     width: '100%'
   });
 });
+
+$(document).ready(function(){
+  $('.select-product').select2({
+    language: "ru",
+    minimumResultsForSearch: -1,
+    width: '352px'
+  });
+});
 //select-end
 
 //view

@@ -1,4 +1,5 @@
 .product-page-content {
+    padding-bottom: 80px;
     .wrapper  {
         display: flex;
         justify-content: space-between;
@@ -7,7 +8,135 @@
         width: 48%;
         padding-right: -100px;
     }
-    &__info {
-        width: 48%;
+}
+.product-item {
+    width: 48%;
+    &__content {
+        margin-top: 76px;
+    }
+    .cat {
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #000000; 
+        span {
+            font-weight: bold;  
+        }
+    }
+    .inf {
+        font-family: 'Noto Sans',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.7);
+        max-width: 542px;
+        margin: 32px 0 46px;
+    }
+    &__price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 44px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #1189FF;
+            text-shadow: 0px 0px 20px rgba(17, 137, 255, 0.3);
+        }
+    }
+    &__ratio {
+        text-align: right;
+    }
+    &__stars {
+        width: 113px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 13px;
+        a {
+            display: inline-flex;
+            background-image: url(../img/reviews/card/star.png);
+            width: 19px;
+            height: 19px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    &__review {
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        text-decoration-line: underline;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    &__buy {
+        display: flex;
+        justify-content: space-between;
+        margin: 42px 0 51px;
+        align-items: center;
+    }
+    &__num {
+        display: flex;
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        a {
+            display: inline-flex;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #000000;
+            &:last-child{
+                border-left: none;
+                cursor: pointer;
+            }
+            &:first-child {
+                border-right: none;
+                cursor: pointer;
+            }
+        }   
+    }
+    &__button {
+        height: 48px;
+        display: flex;
+        align-items: center;
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    &__delivery {
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        span {
+            font-weight: 500;
+            text-decoration: underline;
+            margin-left: 5px;
+        }
     }
 }

@@ -1,0 +1,191 @@
+.product-pads {
+    position: relative;
+    &__nav {
+        display: flex;
+        border-bottom: 2px solid #236FBA;
+        a {
+            padding: 20px 52px;
+            display: block;
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000;
+            cursor: pointer;
+            &.active {
+                border: 2px solid #236FBA;
+                border-bottom: none;
+            }
+        }
+    }
+    &__info {
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        padding: 80px 0 90px;
+        border-bottom: 2px solid #236FBA;
+        display: flex;
+        flex-wrap: wrap;
+        &:before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/product-page/back.png);
+            background-size: cover;
+            width: 488px;
+            height: 714px;
+            right: 0;
+            bottom: 27px;
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 44px;
+            text-transform: uppercase;
+            color: #000000;
+            margin-bottom: 43px;
+        }
+        .passport {
+            position: relative;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            color: #1189FF;
+            margin-left: 51px;
+            cursor: pointer;
+            &:before {
+                content: '';
+                position: absolute;
+                background-image: url(../img/book.svg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 34px;
+                width: 34px;
+                left: -51px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+        h4 {
+            margin: 46px 0 32px;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            color: #000000;
+        }
+        p {
+            max-width: 1191px;
+            font-family: 'Noto Sans',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 156.9%;
+            color: rgba(0, 0, 0, 0.7);
+        }
+    }
+    .struct {
+        width: 50%;
+        ul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 88px;
+            li {
+                font-family: 'Noto Sans',sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: rgba(0, 0, 0, 0.7);
+                max-width: 414px;
+                list-style: disc;
+                margin-left: 15px;
+            }
+        }
+        .char {
+            display: block;
+            background-image: url(../img/product-page/char.png);
+            background-size: cover;
+            width: 724px;
+            height: 130px;
+            margin-top: 46px;
+        }
+        .table {
+            display: block;
+            background-size: cover;
+            background-image: url(../img/product-page/table.png);
+            width: 724px;
+            height: 448px;
+        }
+    }
+    .infomain {
+        width: 100%;
+    }
+    .device {
+        width: 50%;
+        a {
+            display: block;
+            background-size: cover;
+            background-image: url(../img/product-page/sheme.png); 
+            width: 724px;
+            height: 795px;
+        }
+    }
+    .marking {
+        width: 50%;
+        h5 {
+            font-family: 'Noto Sans',sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+        }
+        ol {
+            margin-top: 32px;
+            font-family: 'Noto Sans',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 156.9%;
+            color: rgba(0, 0, 0, 0.7);
+            counter-reset:  marking;
+            li {
+                &::before {
+                    content: counter(marking) '. ';
+                    counter-increment: marking;
+                }
+            }
+        }
+    }
+    .note {
+        width: 50%;
+        ul {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            li {
+                font-family: 'Noto Sans',sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 22px;
+                color: rgba(0, 0, 0, 0.7);
+                list-style: disc;
+                margin-left: 15px;
+                max-width: 724px;
+            }
+        }
+    }
+    .attention {
+        width: 100%;
+        p {
+            max-width: 1107px;
+        }
+    }
+}
