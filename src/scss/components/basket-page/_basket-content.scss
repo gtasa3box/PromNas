@@ -1,10 +1,19 @@
 .basket-content {
     padding-bottom: 150px;
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/basket-page/back.png);
+        background-size: cover;
+        width: 406px;
+        height: 574px;
+        right: 0;
+        top: 175px;
+    }
     &__content {
         margin-top: 85px;
         display: flex;
         flex-wrap: wrap;
-
         font-family: 'Montserrat', sans-serif;
         font-style: normal;
         font-weight: bold;
@@ -20,6 +29,8 @@
         background: linear-gradient(270deg, #1880E8 0%, #5AADFF 100%);
         color: white;
         border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+        position: relative;
+        z-index: 2;
         p {
             width: 20%;
             &:first-child {
