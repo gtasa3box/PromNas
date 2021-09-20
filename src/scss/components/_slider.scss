@@ -1,0 +1,51 @@
+
+.slider-product {
+    display: flex;
+    overflow: hidden;
+    a {
+       display: block;
+       background-size: contain;
+       background-repeat: no-repeat; 
+       background-position: center;
+    }
+  }
+  
+  .nav-container .slick-current img {
+    border-radius: 5px;
+  }
+  .nav-container {
+      margin-top: 200px;
+  }
+  
+  .slider-main {
+    width: 400px;
+    a {
+        width: 400px;
+        height: 650px;
+    }
+  }
+  
+  .main-container {
+    width: 100%;
+  }
+  
+  .nav-container a {
+    max-height: 135px;
+  }
+  
+  .nav-container .slick-slide {
+    max-height: 135px;
+    margin-bottom: 18px;
+    margin-right: 145px;
+    a {
+       width: 138px; 
+       height: 102px;
+    }
+  }
+  
+  
+  @media (min-width: 1000) {
+    .slider-nav {
+      display: none !important;
+    }
+  }

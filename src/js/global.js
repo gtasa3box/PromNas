@@ -47,5 +47,8 @@ $('.list-view').on('click', function(){
 });
 //view- navigate - end
 
-    
-  
+//slider
+
+
+
+//slider-end

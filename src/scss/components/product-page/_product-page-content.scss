@@ -1,0 +1,13 @@
+.product-page-content {
+    .wrapper  {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__slider {
+        width: 48%;
+        padding-right: -100px;
+    }
+    &__info {
+        width: 48%;
+    }
+}

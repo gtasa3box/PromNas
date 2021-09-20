@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Страница товара</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+  <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="site-container">
+    @include('partials/header.html')
+    @include('partials/main-product-page.html')
+    @include('partials/footer.html')
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+  const phoneInputFields = document.querySelector("#number");
+  const phoneInputs = window.intlTelInput(phoneInputFields, {
+    initialCountry: "ru",
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+  });
+</script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/i18n/ru.min.js" integrity="sha512-7LPxZLWcYpSAJlgg7NwBJNISWQllTH2TRHkzfUOT4hEjsOkeD3MErbjU1sQiapxtt1ntozr8y02WlnzivEPhRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script>
+  $('.slider-main').slick({
+  slidesToShow: 1,
+  arrows: false,
+  asNavFor: '.slider-nav',
+  vertical: true,
+  autoplay: false,
+  verticalSwiping: true,
+  centerMode: true
+});
+
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  asNavFor: '.slider-main',
+  vertical: true,
+  focusOnSelect: true,
+  autoplay: false,
+  centerMode: true
+});
+
+$(window).on('resize orientationchange', function() {
+  if ($(window).width() > 1200) {
+    $('.slider-nav').slick('unslick');
+    $('.slider-nav').slick({
+      slidesToShow: 3,
+      asNavFor: '.slider-main',
+      vertical: true,
+      focusOnSelect: true,
+      autoplay: false,
+      centerMode: true
+    });
+  }
+});
+</script>
+</body>
+
+</html>
