@@ -10,8 +10,7 @@ $('.navigate__elem').on('click', function(){
 //title-info
 $('.title__button-hide').on('click', function(){
   $(this).toggleClass('active')
-  $($(this).data('target')).stop(true, false).slideToggle()
-  
+  $($(this).data('target')).stop(true, false).slideToggle() 
 });
 //title-info-end
 
@@ -60,3 +59,12 @@ $('.list-view').on('click', function(){
 
 
 //slider-end
+
+//reviews
+$('.product-pads__nav a').on('click', function(){
+  $('.product-pads__nav a').removeClass('active')
+  $(this).addClass('active')
+  $('.product-pads__info, .product-pads__char, .product-pads__reviews').removeClass('active')
+  $($(this).data('target')).addClass('active')
+});
+//reviews-end
