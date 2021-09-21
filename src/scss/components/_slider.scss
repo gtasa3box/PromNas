@@ -50,3 +50,55 @@
       display: none !important;
     }
   }
+
+
+.slider-page-product {
+  .slick-dots {
+    text-align: left;
+    li {
+      width: 151px;
+      height: 3px;
+      margin: 0;
+      &:not(:last-child) {
+        margin-right: 31px;
+      }
+      button {
+        width: 151px;
+        &:before {
+          background-color: black;
+          content: '';
+          width: 151px;
+          height: 3px;
+          transition: 0.3s ease;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+  .slick-dots li.slick-active button:before {
+    background-color: #1189FF;
+    height: 6px;
+  }
+  .slick-prev, .slick-next{
+    top: 45%;
+    &:before {
+      content: '';
+      position: absolute;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 26px;
+      height: 52px;
+    }
+  }
+  .slick-prev:before {
+    background-image: url(../img/breadcrumbs-arrow.svg);
+    left: -40px;
+    transform: rotate(180deg);
+  }
+  .slick-next:before {
+    background-image: url(../img/breadcrumbs-arrow.svg);
+    right: 0px;
+  }
+}

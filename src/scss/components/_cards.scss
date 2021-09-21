@@ -188,4 +188,18 @@
             }
         }
     }
+    &-slider {
+        .catalog-card {
+            &__center {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__title {
+                max-width: 219px;
+            }
+            &__img {
+            }
+        }
+    }
 }
