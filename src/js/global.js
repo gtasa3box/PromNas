@@ -68,3 +68,10 @@ $('.product-pads__nav a').on('click', function(){
   $($(this).data('target')).addClass('active')
 });
 //reviews-end
+
+//burger 
+$('#burger').on('click', function(){
+  $('#burgerlink').toggleClass('active')
+  $('.nav').toggleClass('active')
+});
+//burger-end

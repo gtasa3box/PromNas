@@ -6,6 +6,12 @@
     display: block;
     width: 131px;
     height: 85px;
+    @media (max-width: 600px) {
+        background-image: url(../img/logo-w.svg);
+        width: 66px;
+        height: 39px;
+        margin: 5px 0 5px 15px;
+    }
     &_white {
         background-image: url(../img/logo-white.svg);
         background-size: contain;
