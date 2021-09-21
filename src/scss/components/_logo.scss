@@ -20,5 +20,9 @@
         display: block;
         width: 324px;
         height: 209px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 222px;
+            height: 143px; 
+        }
     }
 }

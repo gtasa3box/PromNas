@@ -7,6 +7,9 @@
         color: #000000;
         position: relative;
         transition: 0.3s ease;
+        @media (min-width: 601px) and (max-width: 1000px) {
+            font-size: 14px;
+        }
         a {
             color: #000000; 
         }
@@ -41,6 +44,9 @@
         color: #000000;
         position: relative;
         transition: 0.3s ease;
+        @media (min-width: 601px) and (max-width: 1000px) {
+            font-size: 12px;
+        }
         &:after {
             content: '';
             position: absolute;

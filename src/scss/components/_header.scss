@@ -2,7 +2,7 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
-    @media (max-width: 600px) {
+    @media (min-width: 280px) and (max-width: 600px) {
         background: linear-gradient(270deg, #1880E8 0%, #5AADFF 100%);
     }
     &__top {
@@ -10,7 +10,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 8px 0;
-        @media (max-width: 600px) {
+        @media (min-width: 280px) and (max-width: 600px) {
             flex-wrap: wrap;
             padding: 0;
         }
@@ -19,17 +19,26 @@
         &-top {
             max-width: 1600px;
             margin: 0 auto;
+            @media (min-width: 601px) and (max-width: 1615px) {
+                padding: 0 15px;
+            }
         }
         &-bot {
             max-width: 1600px;
             margin: 0 auto;
+            @media (min-width: 601px) and (max-width: 1615px) {
+                padding: 0 15px;
+            }
         }
     }
     &__logo {  
 
     }
     &__button {
-        @media (max-width: 600px) {
+        @media (min-width: 280px) and (max-width: 600px) {
+            display: none;
+        }
+        @media (min-width: 601px) and (max-width: 760px) {
             display: none;
         }
     }
@@ -39,7 +48,10 @@
         font-size: 18px;
         line-height: 22px;
         color: #000000;
-        @media (max-width: 600px) {
+        @media (min-width: 280px) and (max-width: 600px) {
+            display: none;
+        }
+        @media (min-width: 601px) and (max-width: 1200px) {
             display: none;
         }
     }
@@ -49,7 +61,7 @@
         span {
             font-weight: bold; 
         }
-        @media (max-width: 600px) {
+        @media (min-width: 280px) and (max-width: 600px) {
             order: -1;
             width: 50%;
             background-color: white;
@@ -61,6 +73,10 @@
             justify-content: flex-end;
             padding-right: 15px;
         }
+        @media (min-width: 601px) and (max-width: 1000px) {
+            font-size: 14px;
+            max-width: 144px;
+        }
     }
     &__search {
         font-weight: normal;
@@ -68,7 +84,10 @@
         line-height: 15px;
         color: rgba(0, 0, 0, 0.7);
         position: relative;
-        @media (max-width: 600px) {
+        @media (min-width: 280px) and (max-width: 600px) {
+            display: none;
+        }
+        @media (min-width: 601px) and (max-width: 1400px) {
             display: none;
         }
         input {
@@ -108,7 +127,7 @@
         .contacts__number {
             margin-bottom: 13px;
         }
-        @media (max-width: 600px) {
+        @media (min-width: 280px) and (max-width: 600px) {
             order: -2;
             width: 50%;
             background-color: white;
@@ -144,6 +163,8 @@
         line-height: 28px;
         text-align: center;
         text-transform: lowercase;
+        position: relative;
+        z-index: 3;
         a {
             color: #FFFFFF;
         }
@@ -157,7 +178,7 @@
 		position: relative;
 		margin-right: 15px;
         margin-left: 14px;
-        @media (max-width: 600px) {
+        @media (min-width: 280px) and (max-width: 600px) {
             display: block;
         }
     }

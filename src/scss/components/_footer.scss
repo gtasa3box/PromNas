@@ -21,9 +21,26 @@
         color: white;
         display: flex;
         justify-content: space-between;
+        @media (min-width: 280px) and (max-width: 600px)  {
+            flex-wrap: wrap;
+            padding: 52px 0 35px;
+        }
+        @media (min-width: 601px) and (max-width: 1360px) {
+            flex-wrap: wrap;
+        }
+        @media (min-width: 601px) and (max-width: 859px) {
+            justify-content: space-around;
+        }
     }
     &__logo {
         padding-top: 21px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 100%;
+            padding-top: 0;
+            display: flex;
+            justify-content: center;
+            order: 1;
+        }
     }
     &__title {
         font-weight: bold;
@@ -31,6 +48,11 @@
         line-height: 22px;
         text-transform: uppercase;
         margin-bottom: 24px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 18px;
+        }
     }
     &__info {
         padding-top: 21px;
@@ -43,24 +65,50 @@
             color: #FFFFFF;
             &:not(:last-child) {
                 margin-bottom: 15px;
+                @media (min-width: 280px) and (max-width: 600px) {
+                    margin-bottom: 12px;
+                }
             }
             &:hover {
                 opacity: 0.8;
             }
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 12px;
+                line-height: 15px;
+            }
+        }
+        @media (min-width: 280px) and (max-width: 600px) {
+            order: 2;
+            width: 50%;
         }
     }
     &__production {
         border: 1px solid #FFFFFF;
         box-sizing: border-box;
         padding: 20px 24px 5px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            order: 4;
+            width: 100%;
+            padding: 22px 18px 36px;
+            margin-top: 27px;
+        }
+        @media (min-width: 601px) and (max-width: 1360px) {
+            width: 100%;
+            order: 3;
+        }
     }
     &__production-elem {
         display: flex;
         flex-direction: column;
-        align-items: space-between;
         flex-wrap: wrap;
         max-height: 200px;
         min-width: 470px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            min-width: auto;
+            max-height: 210px;
+            max-width: 158px;
+            column-gap: 10vw;
+        }
         a {
             display: block;
             font-weight: 500;
@@ -74,6 +122,11 @@
             &:hover {
                 opacity: 0.8;
             }
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 12px;
+                line-height: 15px;
+                font-weight: normal;
+            }
         }
     }
     &__contacts {
@@ -81,22 +134,49 @@
         flex-direction: column;
         padding-top: 21px;
         .contacts__number {
-            margin-left: 30px;   
+            margin-left: 30px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 12px;
+                line-height: 17px;
+            }   
         }
         .contacts__adress {
             max-width: 251px;
             margin-left: 30px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 9px;
+                line-height: 13px;
+            }
         }
         .contacts__mail {
             margin-top: 25px;
             margin-bottom: 25px;
             margin-left: 30px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                margin-top: 18px;
+                margin-bottom: 19px;
+                font-size: 12px;
+                line-height: 17px;
+            }
+        }
+        @media (min-width: 280px) and (max-width: 600px) {
+            order: 3;
+            width: 50%;
+        }
+        @media (min-width: 601px) and (max-width: 860px) {
+            order: 1;
+            width: 100%; 
+            align-items: center;
+            margin-bottom: 10px;
         }
     }
     &__bottom {
         position: relative;
         border-top: 1px solid #FFFFFF;
         padding: 50px 0 60px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            padding: 19px 0 24px;
+        }
         p {
             font-family: 'Gilroy',sans-serif;
             font-style: normal;
@@ -107,6 +187,10 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: #FFFFFF;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 14px;
+                line-height: 17px;
+            }
         }
     }
 

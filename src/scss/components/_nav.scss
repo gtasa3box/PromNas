@@ -2,18 +2,25 @@
     display: flex;
     justify-content: space-between;
     padding: 24px 0;
-    @media (max-width: 600px) {
+    @media (min-width: 280px) and (max-width: 600px) {
         display: none;
         flex-wrap: wrap;
         border-top: 1px solid white;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(270deg, #1880E8 0%, #5AADFF 100%);
     }
     a {
         display: block;
         padding: 5px 10px 10px 6px;
         position: relative;
-        @media (max-width: 600px) {
+        @media (min-width: 280px) and (max-width: 600px) {
             width: 100%;
             font-size: 25px;
+        }
+        @media (min-width: 600px) and (max-width: 760px) {
+            font-size: 18px;
+            padding: 3px 5px 5px 4px;
         }
         &:before {
             content: '';
@@ -28,7 +35,7 @@
             transition: 0.3s ease;
             pointer-events: none;
             transform: translate(10px, -10px);
-            @media (max-width: 600px) {
+            @media (min-width: 280px) and (max-width: 600px) {
                 display: none;
             }
         } 
@@ -45,7 +52,7 @@
             transition: 0.3s ease;
             pointer-events: none;
             transform: translate(-10px, 10px) rotate(180deg);
-            @media (max-width: 600px) {
+            @media (min-width: 280px) and (max-width: 600px) {
                 display: none;
             }
         }
