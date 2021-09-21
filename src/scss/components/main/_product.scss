@@ -1,17 +1,26 @@
 .product {
     padding: 60px;
+    @media (min-width: 280px) and (max-width: 600px) {
+        padding: 23px 21px;
+    }
     &__content {
         margin-top: 50px;
-        font-family: Noto Sans;
+        font-family: 'Noto Sans',sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 156.9%;
         color: rgba(0, 0, 0, 0.7);
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 10px;
+        }
     }
     &__title {
         display: flex;
         justify-content: space-between;
+        @media (min-width: 280px) and (max-width: 950px) {
+            flex-wrap: wrap;
+        }
         h3 {
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
@@ -20,6 +29,18 @@
             line-height: 29px;
             text-transform: uppercase;
             color: #000000;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 100%;
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 14px;
+            }
+            @media (min-width: 601px) and (max-width: 950px) {
+                width: 100%;
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 14px;
+            }
         }
         .button {
             cursor: pointer;
@@ -29,6 +50,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (min-width: 280px) and (max-width: 600px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media (min-width: 601px) and (max-width: 1300px) {
+            flex-wrap: wrap;
+        }
     }
     &__img {
         display: block;
@@ -41,6 +69,15 @@
     }
     &__list {
         max-width: 649px;
+        font-family: 'Noto Sans',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 156.9%;
+        color: rgba(0, 0, 0, 0.7);
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 10px;
+        }
         p {
             text-indent: 1.3em;
             span {
@@ -51,16 +88,42 @@
     &__text {
         max-width: 1026px;
         margin-bottom: 60px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin-bottom: 31px;
+        }
     }
     &__popular {
         margin-top: 50px;
         display: flex;
         justify-content: space-between;
+        @media (min-width: 280px) and (max-width: 600px) {
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+        @media (min-width: 601px) and (max-width: 1300px) {
+            flex-wrap: wrap;
+        }
     }
     .popular {
         &__card {
             width: 20%;
             position: relative;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+            @media (min-width: 951px) and (max-width: 1300px) {
+                width: 30%;
+                margin-bottom: 20px;
+            }
+            @media (min-width: 831px) and (max-width: 950px) {
+                width: 48%;
+                margin-bottom: 20px;
+            }
+            @media (min-width: 601px) and (max-width: 830px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
         }
     }
     &__elem {

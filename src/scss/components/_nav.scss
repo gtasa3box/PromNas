@@ -95,6 +95,16 @@
         cursor: pointer;
         position: relative;
         transition: 0.3s ease;
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin-left: 0;
+            width: 100%;
+            align-items: center;
+            height: 59px;
+        }
+        @media (min-width: 601px) and (max-width: 1300px) {
+            padding: 5px 14px 5px 24px;
+            align-items: center;
+        }
         a {
             display: inline-block;
             background-size: contain;
@@ -114,6 +124,13 @@
             display: inline-block;
             margin-left: 56px;
             transition: 0.3s ease;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 12px;
+                line-height: 15px;
+            }
+            @media (min-width: 601px) and (max-width: 1300px) {
+                font-size: 12px;
+            }
         }
         &.active {
             margin-left: 0;
@@ -122,6 +139,13 @@
                 font-weight: bold;
                 font-size: 16px;
                 line-height: 20px;
+                @media (min-width: 280px) and (max-width: 600px) {
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+                @media (min-width: 601px) and (max-width: 1300px) {
+                    font-size: 12px;
+                }
             }
         }
     }
