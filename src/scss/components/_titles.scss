@@ -124,6 +124,9 @@
         &-info {
             &:before {
                 bottom: -14px;
+            }
+            @media (min-width: 280px) and (max-width: 600px) {
+                flex-direction: row;
             } 
         }
     }
@@ -172,6 +175,10 @@
         font-size: 16px;
         line-height: 156.9%;
         color: rgba(0, 0, 0, 0.7);
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 10px;
+            line-height: 156.9%;
+        }
         p {
             max-width: 1047px;
         }
@@ -180,6 +187,9 @@
             font-size: 18px;
             color: #000000;
             margin: 28px 0;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 12px; 
+            }
         }
         ol {
             counter-reset:  info-title;

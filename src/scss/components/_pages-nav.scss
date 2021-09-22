@@ -1,6 +1,11 @@
 .pages-nav {
    display: flex; 
    margin-top: 44px;
+   @media (min-width: 280px) and (max-width: 600px) {
+       .mob-hid {
+           display: none;
+       }
+   }
    a {
         display: block;
         height: 52px;
@@ -20,8 +25,17 @@
         text-transform: uppercase;
         color: #000000;
         transition: 0.3s ease;
+        @media (min-width: 280px) and (max-width: 600px) {
+            height: 38px;
+            width: 38px;
+            font-size: 15px;
+            line-height: 18px;
+        }
         &:not(:last-child) {
             margin-right: 20px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                margin-right: 12px;
+            }
         }
         &.active {
             color: white;

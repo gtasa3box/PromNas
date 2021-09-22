@@ -52,6 +52,11 @@ $('.grid-view').on('click', function(){
 $('.list-view').on('click', function(){
   $('.catalog-card').addClass('active')
 });
+
+$('.filters-view').on('click', function(){
+  $(this).toggleClass('active')
+  $($(this).data('target')).toggleClass('active')
+});
 //view- navigate - end
 
 //slider
