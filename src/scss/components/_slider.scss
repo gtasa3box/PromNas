@@ -3,6 +3,10 @@
     display: flex;
     overflow: hidden;
     margin-top: -55px;
+    @media (min-width: 280px) and (max-width: 600px) {
+      flex-wrap: wrap;
+      margin-top: 0;
+    }
     a {
        display: block;
        background-size: contain;
@@ -16,13 +20,29 @@
   }
   .nav-container {
       margin-top: 200px;
+      @media (min-width: 280px) and (max-width: 600px) {
+        order: 1;
+      }
   }
   
   .slider-main {
     width: 400px;
+    @media (min-width: 280px) and (max-width: 600px) {
+      width: 100%;
+      max-height: 500px;
+    }
     a {
         width: 400px;
         height: 650px;
+        @media (min-width: 280px) and (max-width: 600px) {
+          width: 300px;
+          height: 400px;
+        }
+    }
+  }
+  .slider-nav {
+    @media (min-width: 280px) and (max-width: 600px) {
+      display: none;
     }
   }
   

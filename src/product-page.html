@@ -57,7 +57,16 @@ $('.slider-nav').slick({
   vertical: true,
   focusOnSelect: true,
   autoplay: false,
-  centerMode: true
+  centerMode: true,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        vertical: false,
+      }
+    }
+  ]
 });
 
 $(window).on('resize orientationchange', function() {

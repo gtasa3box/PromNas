@@ -1,18 +1,34 @@
 .product-page-content {
     padding-bottom: 80px;
+    @media (min-width: 280px) and (max-width: 600px) {
+        padding-bottom: 40px;
+    }
     .wrapper  {
         display: flex;
         justify-content: space-between;
+        @media (min-width: 280px) and (max-width: 1200px) {
+            flex-wrap: wrap;
+        }
     }
     &__slider {
         width: 48%;
         padding-right: -100px;
+        @media (min-width: 280px) and (max-width: 1200px) {
+            width: 100%;
+        }
     }
 }
 .product-item {
     width: 48%;
+    @media (min-width: 280px) and (max-width: 1200px) {
+        width: 100%;
+        background-color: white;
+    }
     &__content {
         margin-top: 76px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin-top: 45px;
+        }
     }
     .cat {
         font-family: 'Montserrat',sans-serif;
@@ -21,6 +37,9 @@
         font-size: 18px;
         line-height: 22px;
         color: #000000; 
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 12px;
+        }
         span {
             font-weight: bold;  
         }
@@ -34,6 +53,10 @@
         color: rgba(0, 0, 0, 0.7);
         max-width: 542px;
         margin: 32px 0 46px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
     &__price {
         display: flex;
@@ -49,6 +72,10 @@
             text-transform: uppercase;
             color: #1189FF;
             text-shadow: 0px 0px 20px rgba(17, 137, 255, 0.3);
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
     }
     &__ratio {
@@ -84,6 +111,9 @@
         justify-content: space-between;
         margin: 42px 0 51px;
         align-items: center;
+        @media (min-width: 280px) and (max-width: 1450px) {
+            flex-wrap: wrap;
+        }
     }
     &__num {
         display: flex;
@@ -95,6 +125,12 @@
         text-align: center;
         text-transform: uppercase;
         color: #000000;
+        @media (min-width: 280px) and (max-width: 1450px) {
+            margin-bottom: 20px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-bottom: 0;
+        }
         a {
             display: inline-flex;
             width: 48px;
@@ -125,6 +161,12 @@
         text-align: center;
         color: #FFFFFF;
         cursor: pointer;
+        @media (min-width: 280px) and (max-width: 1450px) {
+            margin-bottom: 20px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-bottom: 0;
+        }
     }
     &__delivery {
         font-family: 'Montserrat',sans-serif;
@@ -133,6 +175,10 @@
         font-size: 20px;
         line-height: 24px;
         color: #000000;
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 14px;
+            line-height: 17px;
+        }
         span {
             font-weight: 500;
             text-decoration: underline;

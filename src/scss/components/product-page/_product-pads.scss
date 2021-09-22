@@ -15,6 +15,11 @@
             cursor: pointer;
             border: 2px solid white;
             border-bottom: none;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 12px;
+                line-height: 15px;
+                padding: 11px 18px;
+            }
             &.active {
                 border: 2px solid #236FBA;
                 border-bottom: none;
@@ -29,6 +34,9 @@
         display: flex;
         flex-wrap: wrap;
         display: none;
+        @media (min-width: 280px) and (max-width: 600px) {
+            padding-bottom: 40px;
+        }
         &.active {
             display: flex;
         }
@@ -41,6 +49,9 @@
             height: 714px;
             right: 0;
             bottom: 27px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                display: none;
+            }
         }
         h3 {
             font-weight: bold;
@@ -49,6 +60,10 @@
             text-transform: uppercase;
             color: #000000;
             margin-bottom: 43px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
         .passport {
             position: relative;
@@ -60,6 +75,10 @@
             color: #1189FF;
             margin-left: 51px;
             cursor: pointer;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 12px;
+                line-height: 15px;
+            }
             &:before {
                 content: '';
                 position: absolute;
@@ -83,6 +102,10 @@
             font-size: 20px;
             line-height: 24px;
             color: #000000;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 14px;
+                line-height: 17px;
+            }
         }
         p {
             max-width: 1191px;
@@ -92,15 +115,25 @@
             font-size: 16px;
             line-height: 156.9%;
             color: rgba(0, 0, 0, 0.7);
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 12px;
+                line-height: 156.9%;
+            }
         }
     }
     .struct {
         width: 50%;
+        @media (min-width: 280px) and (max-width: 1450px) {
+            width: 100%;
+        }
         ul {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             max-height: 88px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                max-height: none;
+            }
             li {
                 font-family: 'Noto Sans',sans-serif;
                 font-style: normal;
@@ -120,6 +153,17 @@
             width: 724px;
             height: 130px;
             margin-top: 46px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 63px;
+            }
+            @media (min-width: 601px) and (max-width: 750px) {
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+            }
         }
         .table {
             display: block;
@@ -127,6 +171,17 @@
             background-image: url(../img/product-page/table.png);
             width: 724px;
             height: 448px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 212px;
+            }
+            @media (min-width: 601px) and (max-width: 750px) {
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+            }
         }
     }
     .infomain {
@@ -134,16 +189,33 @@
     }
     .device {
         width: 50%;
+        @media (min-width: 280px) and (max-width: 1450px) {
+            width: 100%;
+        }
         a {
             display: block;
             background-size: cover;
             background-image: url(../img/product-page/sheme.png); 
             width: 724px;
             height: 795px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 379px;
+            }
+            @media (min-width: 601px) and (max-width: 750px) {
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 100%;
+            }
         }
     }
     .marking {
         width: 50%;
+        @media (min-width: 280px) and (max-width: 1450px) {
+            width: 100%;
+        }
         h5 {
             font-family: 'Noto Sans',sans-serif;
             font-style: normal;
@@ -151,6 +223,10 @@
             font-size: 16px;
             line-height: 22px;
             color: #000000;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 12px;
+                line-height: 16px;
+            }
         }
         ol {
             margin-top: 32px;
@@ -161,6 +237,10 @@
             line-height: 156.9%;
             color: rgba(0, 0, 0, 0.7);
             counter-reset:  marking;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 12px;
+                line-height: 156.9%;
+            }
             li {
                 &::before {
                     content: counter(marking) '. ';
@@ -171,6 +251,9 @@
     }
     .note {
         width: 50%;
+        @media (min-width: 280px) and (max-width: 1450px) {
+            width: 100%;
+        }
         ul {
             display: flex;
             flex-direction: column;
@@ -185,6 +268,10 @@
                 list-style: disc;
                 margin-left: 15px;
                 max-width: 724px;
+                @media (min-width: 280px) and (max-width: 600px) {
+                    font-size: 12px;
+                    line-height: 156.9%;
+                }
             }
         }
     }
@@ -205,6 +292,12 @@
         padding-bottom: 93px;
         display: none;
         border-bottom: 2px solid #236FBA;
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 14px;
+            line-height: 17px;
+            padding-top: 43px;
+            padding-bottom: 80px;
+        }
         &.active {
             display: block;
         }
@@ -217,6 +310,9 @@
             height: 618px;
             right: 0;
             bottom: -50px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                display: none;
+            }
         }
     }
     &__charelem {
@@ -244,9 +340,15 @@
         }
         &-write {
             width: 17%;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 100%;
+            }
         }
         &-watch {
             width: 83%;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 100%;
+            }
         }
     }
     &__rating {
@@ -258,6 +360,10 @@
             line-height: 78px;
             text-transform: uppercase;
             color: #000000;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 48px;
+                line-height: 59px;
+            }
         }
         a {
             display: inline-block;
@@ -267,6 +373,10 @@
             background-position: center;
             width: 26px;
             height: 25px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 19px;
+                height: 19px;
+            }
             &:not(:last-child) {
                 margin-right: 6px;
             }
@@ -277,10 +387,18 @@
             line-height: 20px;
             text-align: center;
             color: rgba(0, 0, 0, 0.7);
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 10px;
+                line-height: 12px;
+            }
         }
     }
     &__stars-void {
         margin: 80px 0 36px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin: 55px 0 46px;
+            width: 141px;
+        }
         a {
             display: inline-block;
             background-image: url(../img/reviews/card/star-void.png);
@@ -289,8 +407,15 @@
             background-position: center;
             width: 33px;
             height: 33px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 23px;
+                height: 23px;
+            }
             &:not(:last-child) {
                 margin-right: 8px;
+                @media (min-width: 280px) and (max-width: 600px) {
+                    margin-right: 6px;
+                }
             }
         }
     }
@@ -309,6 +434,15 @@
         height: 74px;
         display: flex;
         align-items: center;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 162px;
+            height: 44px;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 0;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
     }
     &__rating-static {
         font-family: 'Montserrat',sans-serif;
@@ -394,10 +528,16 @@
             transform: translateY(-50%);
             pointer-events: none;
             z-index: -1;
+            @media (min-width: 280px) and (max-width: 600px) {
+                display: none;
+            }
         }
         &-watch {
             padding-left: 150px;
             padding-bottom: 170px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                padding-left: 0;
+            }
         }
         &-name {
             font-family: 'Montserrat',sans-serif;
@@ -406,7 +546,6 @@
             font-size: 24px;
             line-height: 29px;
             color: #000000;
-
             display: flex;
             align-items: center;
             a {
