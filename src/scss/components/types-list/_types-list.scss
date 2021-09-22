@@ -176,8 +176,12 @@
                 display: block;
             }
         }
-        @media (min-width: 601px) and (max-width: 1000px) {
+        @media (min-width: 601px) and (max-width: 750px) {
             width: 97%;
+            top: 670px;
+        }
+        @media (min-width: 751px) and (max-width: 1000px) {
+            top: 600px;
         }
     }
 }

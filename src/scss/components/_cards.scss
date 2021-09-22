@@ -226,6 +226,9 @@
         margin-bottom: 30px;
         padding-right: 78px;
         .catalog-card {
+            @media (min-width: 280px) and (max-width: 600px) {
+                justify-content: space-between;
+            }
             &__button {
                 position: relative;
                 bottom: initial;
@@ -248,6 +251,9 @@
                 line-height: 156.9%;
                 color: #000000;
                 flex-grow: 1;
+                @media (min-width: 280px) and (max-width: 1100px) {
+                    display: none;
+                }
             }
             &__title {
                 max-width: 370px;
@@ -256,9 +262,15 @@
             &__price {
                 text-align: left;
                 margin: 23px 0;
+                @media (min-width: 280px) and (max-width: 600px) {
+                    margin: 10px 0 15px;
+                }
             }
             &__center {
                 flex-grow: 1;
+                @media (min-width: 280px) and (max-width: 600px) {
+                    flex: none;
+                }
             }
         }
     }
