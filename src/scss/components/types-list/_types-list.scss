@@ -26,7 +26,7 @@
         }
         .filters-view {
             display: none;
-            @media (min-width: 280px) and (max-width: 600px) {
+            @media (min-width: 280px) and (max-width: 1000px) {
                 display: flex;
                 width: 144px;
                 height: 32px;
@@ -54,6 +54,11 @@
                         transform: rotate(90deg);
                     }
                 }
+            }
+            @media (min-width: 601px) and (max-width: 1000px) {
+                height: 52px;
+                display: flex;
+                align-items: center;
             }
         }
     }
@@ -154,13 +159,13 @@
     }
     &__left {
         width: 74%;
-        @media (min-width: 280px) and (max-width: 600px) {
+        @media (min-width: 280px) and (max-width: 1000px) {
             width: 100%;
         }
     }
     &__right {
         width: 24%;
-        @media (min-width: 280px) and (max-width: 600px) {
+        @media (min-width: 280px) and (max-width: 1000px) {
             display: none;
             width: 95%;
             position: absolute;
@@ -170,6 +175,9 @@
             &.active {
                 display: block;
             }
+        }
+        @media (min-width: 601px) and (max-width: 1000px) {
+            width: 97%;
         }
     }
 }
