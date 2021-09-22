@@ -1,5 +1,8 @@
 .types-product {
     padding-bottom: 90px;
+    @media (min-width: 280px) and (max-width: 600px) {
+        padding-bottom: 20px;
+    }
     &__title {
         
     }
@@ -8,6 +11,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin-top: 55px;
+        }
     }
     &__hover {
         position: absolute;
@@ -17,6 +23,11 @@
         padding: 140px 0 60px;
         transition: 0.4s ease;
         pointer-events: none;
+        @media (min-width: 280px) and (max-width: 600px) {
+            bottom: -221px;
+            height: 221px; 
+            padding: 50px 0 20px;
+        }
     }
     &__card {
         width: 21%;
@@ -31,6 +42,17 @@
         align-items: center;
         position: relative;
         overflow: hidden;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 45%;
+            padding: 25px 0;
+            margin-bottom: 20px;
+        }
+        @media (min-width: 901px) and (max-width: 1300px) {
+            width: 30%;
+        }
+        @media (min-width: 601px) and (max-width: 900px) {
+            width: 45%;
+        }
         &:hover {
             .card-hover {
                 bottom: 0;
@@ -48,6 +70,12 @@
         color: #000000;
         margin-bottom: 70px;
         max-width: 242px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 9px;
+            line-height: 11px;
+            margin-bottom: 30px;
+            max-width: 113px;
+        }
     }
     &__img {
         display: block;
@@ -56,6 +84,10 @@
         background-position: center;
         width: 260px;
         height: 260px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 123px;
+            height: 123px;
+        }
     }
 
 }

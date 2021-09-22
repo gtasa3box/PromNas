@@ -92,11 +92,24 @@
             display: none;
         }
     }
+    &__contain {
+        @media (min-width: 280px) and (max-width: 1050px) {
+            margin-top: 24px;
+        } 
+    }
     &_production {
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
+        @media (min-width: 280px) and (max-width: 600px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        @media (min-width: 601px) and (max-width: 1050px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -120,11 +133,18 @@
         text-decoration-line: underline;
         color: #000000;
         margin-right: 40px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 12px;
+            line-height: 135.69%;
+        }
         &:hover {
         opacity: 0.8;
         }
     }
     &__button {
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin-top: 16px;
+        }
         &-hide {
             display: block;
             background-image: url(../img/btn-hide.svg);
