@@ -38,6 +38,12 @@
     &_middle {
         &:before {
             width: 597px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 299px;
+            }
+            @media (min-width: 601px) and (max-width: 830px) {
+                width: 400px;
+            }
         }
     }
     &_big {

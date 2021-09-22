@@ -1,6 +1,13 @@
 .delivery {
     padding-top: 132px ;
     position: relative;
+    @media (min-width: 280px) and (max-width: 600px) {
+        padding-top: 55px;
+        padding-bottom: 290px;
+    }
+    @media (min-width: 601px) and (max-width: 1150px) {
+        padding-top: 80px;
+    }
     &:before {
         content: '';
         background-image: url(../img/delivery/map.png);
@@ -10,6 +17,21 @@
         width: 1144px;
         height: 891px;
         pointer-events: none;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 100%;
+            height: 335px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 440px;
+        }
+        @media (min-width: 601px) and (max-width: 1500px) {
+            opacity: 0.5;
+        }
+        @media (min-width: 601px) and (max-width: 1150px) {
+            width: 100%;
+            top: 0;
+        }
     }
     .wrapper {
         position: relative;
@@ -17,6 +39,12 @@
     }
     &__content {
         margin-top: 170px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin-top: 53px;
+        }
+        @media (min-width: 601px) and (max-width: 1150px)  {
+            margin-top: 80px;
+        }
     }
     &__city {
         display: flex;
@@ -24,6 +52,9 @@
         flex-wrap: wrap;
         max-height: 520px;
         max-width: 454px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            max-height: 390px;
+        }
         a {
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
@@ -35,6 +66,11 @@
             margin-bottom: 40px;
             &:hover {
                 opacity: 0.8;
+            }
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 27px;
             }
         }
     }
