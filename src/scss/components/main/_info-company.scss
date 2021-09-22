@@ -2,6 +2,10 @@
     padding-top: 132px;
     padding-bottom: 160px;
     position: relative;
+    @media (min-width: 280px) and (max-width: 600px) {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
     &:before {
         content: '';
         background-image: url(../img/delivery/1.png);
@@ -11,6 +15,9 @@
         width: 704px;
         height: 1000px;
         pointer-events: none;
+        @media (min-width: 280px) and (max-width: 600px) {
+            display: none;
+        }
     }
     &_backcall {
         padding-top: 0;
@@ -31,6 +38,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
         z-index: 2;
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin-top: 0;
+        }
         &_backcall {
             margin-top: 0;  
         }
@@ -39,12 +49,24 @@
         width: 48%;
         position: relative;
         z-index: 2;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 100%;
+        }
+        @media (min-width: 1201px) and (max-width: 1700px) {
+            width: 60%;
+        }
+        @media (min-width: 601px) and (max-width: 1200px) {
+            width: 80%;
+        }
         form {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             max-height: 340px;
             justify-content: space-between;
+            @media (min-width: 280px) and (max-width: 600px) {
+                max-height: 1000px;
+            }
         }
         input {
             font-family: 'Montserrat',sans-serif;
@@ -61,6 +83,13 @@
             box-sizing: border-box;
             outline: none;
             padding: 22px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 100%;
+                max-width: 345px;
+            }
+        }
+        .inputmail {
+            margin: 32px 0;
         }
         .button {
             border: none;
@@ -76,6 +105,9 @@
             color: #FFFFFF;
             display: flex;
             justify-content: center;
+            @media (min-width: 280px) and (max-width: 600px) {
+                order: 1;
+            }
         }
         textarea {
             background-color: #FFFFFF;
@@ -91,10 +123,29 @@
             line-height: 17px;
             color: rgba(0, 0, 0, 0.7);
             outline: none;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 100%;
+                max-width: 345px;
+                height: 189px;
+                margin-bottom: 30px;
+            }
+            @media (min-width: 601px) and (max-width: 1200px) {
+                margin-left: 20px;
+            }
+            @media (min-width: 601px) and (max-width: 750px) {
+                max-width: 250px;
+            }
         }
     }
     &__map {
         width: 48%;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 100%;
+        }
+        @media (min-width: 601px) and (max-width: 1700px) {
+            width: 100%;
+            margin-top: 60px;
+        }
     }
     &__smalltitle {
         font-family: 'Montserrat',sans-serif;
@@ -105,6 +156,11 @@
         text-transform: uppercase;
         color: #000000;
         margin-bottom: 60px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-top: 53px;
+        }
     }
     &__frame {
         border: 2px solid #1189FF;
@@ -114,6 +170,26 @@
         right: 0;
         width: 920px;
         border-right: none;
+        iframe {
+            width: 920px;
+            height: 333px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 100%;
+            }
+            @media (min-width: 601px) and (max-width: 1700px) {
+                width: 100%;
+            }
+        }
+        @media (min-width: 280px) and (max-width: 600px) {
+            position: relative;
+            max-width: 100%;
+            border: 2px solid #1189FF;
+        }
+        @media (min-width: 601px) and (max-width: 1700px) {
+            position: relative;
+            width: 100%; 
+            border: 2px solid #1189FF;
+        }
     }
     &__mapinfo {
         position: absolute;
@@ -122,18 +198,38 @@
         background: #3A9DFF;
         border-radius: 7px;
         padding: 20px;
-        max-width: 338px;  
+        max-width: 338px; 
+        @media (min-width: 280px) and (max-width: 600px) {
+            bottom: 15px;
+            left: 20px;
+            max-width: 241px;
+            padding: 15px 20px;
+        } 
     }
     &__contacts {
         .contacts__number {
             margin-left: 40px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 9px;
+                line-height: 13px;
+                margin-left: 26px;
+            }
         }
         .contacts__mail {
             margin-left: 40px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 9px;
+                line-height: 13px;
+            }
         }
         .contacts__adress {
             margin-left: 40px;
             margin-top: 20px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 10px;
+                line-height: 14px;
+                margin-left: 26px;
+            }
         }
     }
     &__mapfull {

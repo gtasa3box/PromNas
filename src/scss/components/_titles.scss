@@ -49,6 +49,12 @@
     &_big {
         &:before {
             width: 647px;
+            @media (min-width: 280px) and (max-width: 600px)  {
+                width: 300px;
+            }
+            @media (min-width: 601px) and (max-width: 830px) {
+                width: 400px;
+            }
         }
     }
     &_company {
