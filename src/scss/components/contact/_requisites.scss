@@ -1,9 +1,18 @@
 .requisites {
     position: relative;
     padding-bottom: 150px;
+    @media (min-width: 280px) and (max-width: 600px) {
+        padding-bottom: 0px;
+    }
     .wrapper {
         display: flex;
         justify-content: flex-end;
+        @media (min-width: 601px) and (max-width: 1300px) {
+            justify-content: flex-start;
+        }
+    }
+    &__title {
+        margin-bottom: 61px;
     }
     &__map {
         position: absolute;
@@ -11,11 +20,41 @@
         left: 0;
         border: 2px solid #1189FF;
         border-left: none;
+        iframe {
+            width: 860px; 
+            height: 674px;
+            @media (min-width: 280px) and (max-width: 1700px) {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        @media (min-width: 280px) and (max-width: 600px) {
+            position: relative;
+            width: 100%;
+            border-left: none;
+            border-right: none;
+            height: 219px;
+            margin-bottom: 26px;
+        }
+        @media (min-width: 1301px) and (max-width: 1700px) {
+            width: 40%;
+            height: 500PX;
+        }
+        @media (min-width: 601px) and (max-width: 1300px) {
+            width: 100%;
+            height: 500px;
+            position: relative;
+            border-right: none;
+        }
     }
     &__content {
         width: 761px;
         position: relative;
         z-index: 2;
+        @media (min-width: 601px) and (max-width: 1300px) {
+            margin-top: 50px;
+            width: 100%;
+        }
     }
     &__info {
         font-family: 'Montserrat',sans-serif;
@@ -28,12 +67,22 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 12px;
+            line-height: 164.4%;
+            max-height: none;
+        }
         h3 {
             font-weight: bold;
             font-size: 18px;
             line-height: 22px;
             color: #000000;
             margin-bottom: 24px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 8px;
+            }
         }
         p {
             max-width: 355px;
@@ -49,6 +98,9 @@
     &__elem {
         &:not(:last-child) {
             margin-bottom: 45px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                margin-bottom: 26px;
+            }
         }
     }
 }
