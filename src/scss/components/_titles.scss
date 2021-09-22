@@ -116,6 +116,10 @@
             border: 3px solid #236FBA;
             width: 100%;
             bottom: -36px;
+            @media (min-width: 280px) and (max-width: 600px) {
+                border: 2px solid #236FBA;
+                bottom: -20px;
+            }
         }
         &-info {
             &:before {
