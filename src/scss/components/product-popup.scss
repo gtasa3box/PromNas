@@ -1,0 +1,108 @@
+.product-popup {
+    background: #FFFFFF;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 40px 100px;
+    width: 1324px;
+    height: 700px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    &:before {
+        content: '';
+        position: absolute;
+        background-image: url(../img/eye-off.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 33px;
+        height: 33px;
+        top: 38px;
+        left: 100px;
+    }
+    &__slider {
+        width: 47%;
+    }
+    &__rait {
+        position: absolute;
+        top: 43px;
+        right: 100px;
+    }
+    &__stars {
+        display: flex;
+        a {
+            display: block;
+            background-image: url(../img/reviews/card/star.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            margin-bottom: 13px;
+            &:not(:last-child) {
+                margin-right: 6px;
+            }
+        }
+    }
+    &__reviews {
+        text-align: right;
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        text-decoration-line: underline;
+        color: rgba(0, 0, 0, 0.7);
+    }
+    &__info {
+        width: 53%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        color: #000000;
+        h3 {
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 49px;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            color: rgba(0, 0, 0, 0.7);
+            margin-bottom: 22px;
+        }
+        .product-popup__price {
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: #1189FF;
+            text-shadow: 0px 0px 20px rgba(17, 137, 255, 0.3);
+        }
+        span {
+            font-weight: bold;
+        }
+    }
+    &__basket {
+        display: flex;
+        div {
+            margin-right: 20px;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: none;
+        }
+    }
+}
