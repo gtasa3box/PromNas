@@ -20,9 +20,11 @@
 }
 .product-item {
     width: 48%;
+    margin-top: 100px;
     @media (min-width: 280px) and (max-width: 1200px) {
         width: 100%;
         background-color: white;
+        margin-top: 0;
     }
     &__content {
         margin-top: 76px;

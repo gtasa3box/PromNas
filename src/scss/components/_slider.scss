@@ -37,6 +37,7 @@
         @media (min-width: 280px) and (max-width: 600px) {
           width: 300px;
           height: 400px;
+          margin: 0 auto;
         }
     }
   }
@@ -47,7 +48,12 @@
   }
   
   .main-container {
-    width: 100%;
+    width: 100%; 
+    @media (min-width: 601px) {
+      margin-left: -125px;
+      overflow: hidden;
+      max-height: 700px;
+    }
   }
   
   .nav-container a {
@@ -57,7 +63,8 @@
   .nav-container .slick-slide {
     max-height: 135px;
     margin-bottom: 18px;
-    margin-right: 145px;
+    //margin-right: 145px;
+    max-width: 200px !important;
     a {
        width: 138px; 
        height: 102px;
