@@ -1,13 +1,15 @@
 .product-popup {
     background: #FFFFFF;
     border-radius: 30px;
-    border: 1px solid black;
     padding: 40px 100px;
     width: 1324px;
     height: 700px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    @media (min-width: 601px) and (max-width: 1200px) {
+        height: auto;
+    }
     &:before {
         content: '';
         position: absolute;
@@ -22,6 +24,9 @@
     }
     &__slider {
         width: 47%;
+        @media (min-width: 601px) and (max-width: 1100px) {
+            width: 100%;
+        }
     }
     &__rait {
         position: absolute;
@@ -61,6 +66,9 @@
         font-family: 'Montserrat',sans-serif;
         font-style: normal;
         color: #000000;
+        @media (min-width: 601px) and (max-width: 1100px) {
+            width: 100%;
+        }
         h3 {
             font-weight: bold;
             font-size: 40px;
@@ -106,3 +114,9 @@
         }
     }
 }
+.fancybox-content {
+    padding: 0;
+    border-radius: 30px;
+}
+
+  

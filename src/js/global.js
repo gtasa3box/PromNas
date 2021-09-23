@@ -80,3 +80,5 @@ $('#burger').on('click', function(){
   $('.nav').toggleClass('active')
 });
 //burger-end
+
+//fast visible

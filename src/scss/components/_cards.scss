@@ -114,8 +114,7 @@
         min-width: 163px;
         margin-bottom: 30px;
     }
-    &::before {
-        content: '';
+    .eye-img {
         background-image: url(../img/eye.svg);
         background-size: 25.67px 18.67px;
         position: absolute;
@@ -123,14 +122,28 @@
         left: 27px;
         width: 25.67px;
         height: 18.67px;
+        cursor: pointer;
         @media (min-width: 280px) and (max-width: 600px) {
-            top: 15px;
-            left: 16px;
-            width: 12px;
-            height: 9px;
-            background-size: 12px 9px;
+            display: none;
         }
     }
+    // &::before {
+    //     content: '';
+    //     background-image: url(../img/eye.svg);
+    //     background-size: 25.67px 18.67px;
+    //     position: absolute;
+    //     top: 27px;
+    //     left: 27px;
+    //     width: 25.67px;
+    //     height: 18.67px;
+    //     @media (min-width: 280px) and (max-width: 600px) {
+    //         top: 15px;
+    //         left: 16px;
+    //         width: 12px;
+    //         height: 9px;
+    //         background-size: 12px 9px;
+    //     }
+    // }
     &__img {
         margin-top: 37px;
         width: 320px;
