@@ -21,7 +21,7 @@
     &:before {
         content: '';
         position: absolute;
-        border-bottom: 3px solid #236FBA;
+        border-bottom: 6px solid #236FBA;
         width: 445px;
         bottom: -36px;
         @media (min-width: 280px) and (max-width: 600px) {
@@ -168,6 +168,10 @@
             height: 8px;
             transition: 0.3s ease;
             cursor: pointer;
+            @media (min-width: 280px) and (max-width: 600px) {
+                width: 10px;
+                height: 4.29px;
+            }
             &.active{
                 transform: rotate(180deg);
             }

@@ -5,6 +5,14 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .iti__flag {background-image: url("../img/flags@2x.png");}
 }
+
+.iti__selected-flag {
+  padding: 0 29px 0 26px !important;
+}
+
+.iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+  padding-left: 82px !important;
+}
 //flags to input tel-end
 
 //scroll custom

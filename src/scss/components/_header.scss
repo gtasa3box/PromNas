@@ -103,7 +103,8 @@
         &:before {
             content: '';
             position: absolute;
-            background-image: url(../img/lupa.png);
+            background-image: url(../img/lupa.svg);
+            background-repeat: no-repeat;
             width: 19px;
             height: 19px;
             background-size: contain;

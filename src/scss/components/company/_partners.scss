@@ -1,7 +1,13 @@
 .partners {
     padding-bottom: 150px;
+    @media (min-width: 280px) and (max-width: 600px) {
+        padding-bottom: 40px;
+    }
     &__title {
         margin-bottom: 102px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin-bottom: 55px;
+        }
     }
     &__content {
         max-width: 100%;
@@ -10,6 +16,9 @@
     &__scrollbox {
         display: flex;
         padding-bottom: 84px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            padding-bottom: 40px; 
+        }
     }
     &__card {
         width: 355px;
@@ -21,6 +30,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 163px;
+            height: 163px;
+            margin-right: 15px;
+        }
     }
     &__img {
         width: 324px;
@@ -28,5 +42,9 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 149px;
+            height: 84px;
+        }
     }
 }

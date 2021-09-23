@@ -1,8 +1,14 @@
 .certificates {
     position: relative;
     padding-bottom: 150px;
+    @media (min-width: 280px) and (max-width: 600px) {
+        padding-bottom: 75px;
+    }
     &__title {
         margin-bottom: 102px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin-bottom: 55px;
+        }
     }
     &__content {
         max-width: 100%;
@@ -11,6 +17,9 @@
     &__scrollbox {
         display: flex;  
         padding-bottom: 87px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            padding-bottom: 40px;
+        }
     }
     &__card {
         width: 355px;
@@ -19,5 +28,10 @@
         background-repeat: no-repeat;
         margin-right: 66px;
         flex: none;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 163px;
+            height: 226px;
+            margin-right: 20px;
+        }
     }
 }

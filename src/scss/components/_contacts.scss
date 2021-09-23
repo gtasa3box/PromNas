@@ -23,7 +23,7 @@
         &:after {
             content: '';
             position: absolute;
-            background-image: url(../img/phone.png);
+            background-image: url(../img/phone.svg);
             width: 20px;
             height: 20px;
             background-position: center;
@@ -50,7 +50,7 @@
         &:after {
             content: '';
             position: absolute;
-            background-image: url(../img/mail.png);
+            background-image: url(../img/mail.svg);
             width: 23px;
             height: 23px;
             background-position: center;
@@ -82,7 +82,8 @@
                 display: none;
             }
             &::after {
-                background-image: url(../img/phone-white.png); 
+                background-image: url(../img/phone.svg);
+                filter: invert(100%); 
                 width: 14.7px;
                 height: 14.7px;
                 left: -28px;
@@ -98,7 +99,8 @@
             color: #FFFFFF;
             text-decoration: none;
             &::after {
-                background-image: url(../img/mail-white.png); 
+                background-image: url(../img/mail.svg);
+                filter: invert(100%); 
                 width: 19.6px;
                 height: 19.6px;
                 left: -28px;
@@ -116,7 +118,7 @@
             &:after {
                 content: '';
                 position: absolute;
-                background-image: url(../img/locate-white.png);
+                background-image: url(../img/locate-white.svg);
                 background-size: contain;
                 width: 18.8px;
                 height: 18.8px;
