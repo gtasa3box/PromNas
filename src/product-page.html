@@ -41,46 +41,51 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/i18n/ru.min.js" integrity="sha512-7LPxZLWcYpSAJlgg7NwBJNISWQllTH2TRHkzfUOT4hEjsOkeD3MErbjU1sQiapxtt1ntozr8y02WlnzivEPhRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script>
-  $('.slider-main').slick({
-  slidesToShow: 1,
-  arrows: false,
-  asNavFor: '.slider-nav',
-  vertical: true,
-  autoplay: false,
-  verticalSwiping: true,
-  centerMode: true
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    fade: true,
+    asNavFor: '.slider-nav'
 });
-
 $('.slider-nav').slick({
-  slidesToShow: 3,
-  asNavFor: '.slider-main',
-  vertical: true,
-  focusOnSelect: true,
-  autoplay: false,
-  centerMode: true,
-  responsive: [
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    vertical:true,
+    arrows: false,
+    asNavFor: '.slider-for',
+    dots: false,
+    focusOnSelect: true,
+    verticalSwiping:true,
+    responsive: [
     {
-      breakpoint: 600,
+        breakpoint: 992,
+        settings: {
+          vertical: false,
+        }
+    },
+    {
+      breakpoint: 768,
       settings: {
-        slidesToShow: 3,
         vertical: false,
       }
+    },
+    {
+      breakpoint: 580,
+      settings: {
+        vertical: false,
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 380,
+      settings: {
+        vertical: false,
+        slidesToShow: 2,
+      }
     }
-  ]
-});
-
-$(window).on('resize orientationchange', function() {
-  if ($(window).width() > 1200) {
-    $('.slider-nav').slick('unslick');
-    $('.slider-nav').slick({
-      slidesToShow: 3,
-      asNavFor: '.slider-main',
-      vertical: true,
-      focusOnSelect: true,
-      autoplay: false,
-      centerMode: true
-    });
-  }
+    ]
 });
 </script>
 <script>
