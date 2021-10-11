@@ -11,9 +11,13 @@
         font-size: 18px;
         line-height: 26px;
     }
-    @media (min-width: 601px) and (max-width: 830px) {
-        font-size: 25px;
-        line-height: 36px;
+    @media (min-width: 1200px) and (max-width: 1601px) {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    @media (min-width: 601px) and (max-width: 1199px) {
+        font-size: 14px;
+        line-height: 20px;
     }
     &_white {
         color: white;
@@ -29,10 +33,15 @@
             border: 2px solid #236FBA;
             width: 217px;
         }
-        @media (min-width: 601px) and (max-width: 830px) {
+        @media (min-width: 1200px) and (max-width: 1601px) {
             border-bottom: 2px solid #236FBA;
-            width: 307px;
+            width: 289.97px;
             bottom: -14px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 202.98px;
+            bottom: -12px;
+            border-bottom: 2px solid #236FBA;
         }
     }
     &_middle {

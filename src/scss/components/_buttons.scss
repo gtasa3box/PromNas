@@ -35,5 +35,12 @@
     &_yellow {
         background: #FFC107;
         color: black;
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 165px;
+            height: 31px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

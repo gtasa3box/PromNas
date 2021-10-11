@@ -3,6 +3,12 @@
     @media (min-width: 280px) and (max-width: 600px) {
         padding: 23px 21px;
     }
+    @media (min-width: 1200px) and (max-width: 1601px) {
+        padding: 40px 55px;
+    }
+    @media (min-width: 601px) and (max-width: 1199px) {
+        padding: 29px 38px;
+    }
     &__content {
         margin-top: 50px;
         font-family: 'Noto Sans',sans-serif;
@@ -13,6 +19,14 @@
         color: rgba(0, 0, 0, 0.7);
         @media (min-width: 280px) and (max-width: 600px) {
             font-size: 10px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            font-size: 12px;
+            margin-top: 40px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 10px;
+            margin-top: 23px;
         }
     }
     &__title {
@@ -35,15 +49,29 @@
                 line-height: 22px;
                 margin-bottom: 14px;
             }
-            @media (min-width: 601px) and (max-width: 950px) {
-                width: 100%;
-                font-size: 18px;
-                line-height: 22px;
-                margin-bottom: 14px;
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                font-size: 15px;
+                line-height: 18px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                font-size: 12px;
+                line-height: 15px;
             }
         }
         .button {
             cursor: pointer;
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                width: 127.72px;
+                height: 24.76px;
+                font-size: 9px;
+                line-height: 11px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 129px;
+                height: 22px;
+                font-size: 8px;
+                line-height: 10px;
+            }
         }
     }
     &__imgtext {
@@ -66,6 +94,14 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 171.96px;
+            height: 171.96px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 245.66px;
+            height: 245.66px;
+        }
     }
     &__list {
         max-width: 649px;
@@ -77,6 +113,15 @@
         color: rgba(0, 0, 0, 0.7);
         @media (min-width: 280px) and (max-width: 600px) {
             font-size: 10px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            font-size: 12px;
+            max-width: 393px;
+            margin-left: 30px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 10px;
+            max-width: 284px;
         }
         p {
             text-indent: 1.3em;
@@ -91,6 +136,12 @@
         @media (min-width: 280px) and (max-width: 600px) {
             margin-bottom: 31px;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            margin-bottom: 50px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-bottom: 40px;
+        }
     }
     &__popular {
         margin-top: 50px;
@@ -100,8 +151,11 @@
             flex-wrap: wrap;
             margin-top: 16px;
         }
-        @media (min-width: 601px) and (max-width: 1300px) {
-            flex-wrap: wrap;
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            margin-top: 30px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-top: 25px;
         }
     }
     .popular {
@@ -112,17 +166,11 @@
                 width: 48%;
                 margin-bottom: 20px;
             }
-            @media (min-width: 951px) and (max-width: 1300px) {
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                width: 22%;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
                 width: 30%;
-                margin-bottom: 20px;
-            }
-            @media (min-width: 831px) and (max-width: 950px) {
-                width: 48%;
-                margin-bottom: 20px;
-            }
-            @media (min-width: 601px) and (max-width: 830px) {
-                width: 100%;
-                margin-bottom: 20px;
             }
         }
     }
