@@ -6,6 +6,13 @@
         padding-top: 0;
         padding-bottom: 50px;
     }
+    @media (min-width: 1200px) and (max-width: 1601px) {
+        padding-top: 136px;
+        padding-bottom: 150px;
+    }
+    @media (min-width: 601px) and (max-width: 1199px) {
+        padding: 96px 0 45px;
+    }
     &:before {
         content: '';
         background-image: url(../img/delivery/1.png);
@@ -16,6 +23,16 @@
         height: 1000px;
         pointer-events: none;
         @media (min-width: 280px) and (max-width: 600px) {
+            display: none;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px)  {
+            width: 532px;
+            height: 691px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            top: 158px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px)  {
             display: none;
         }
     }
@@ -41,6 +58,12 @@
         @media (min-width: 280px) and (max-width: 600px) {
             margin-top: 0;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            margin-top: 60px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-top: 45px;
+        }
         &_backcall {
             margin-top: 0;  
         }
@@ -52,12 +75,6 @@
         @media (min-width: 280px) and (max-width: 600px) {
             width: 100%;
         }
-        @media (min-width: 1201px) and (max-width: 1700px) {
-            width: 60%;
-        }
-        @media (min-width: 601px) and (max-width: 1200px) {
-            width: 80%;
-        }
         form {
             display: flex;
             flex-direction: column;
@@ -66,6 +83,18 @@
             justify-content: space-between;
             @media (min-width: 280px) and (max-width: 600px) {
                 max-height: 1000px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                max-height: 140.41px;
+            }
+        }
+        input[type=name] {
+            margin-bottom: 32px;
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                margin-bottom: 16px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                margin-bottom: 12px;
             }
         }
         input {
@@ -87,9 +116,39 @@
                 width: 100%;
                 max-width: 345px;
             }
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                width: 178.82px;
+                height: 35.88px;
+                font-size: 10px;
+                line-height: 12px;
+                padding: 12px 13px ;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 134px;
+                height: 25px;
+                font-size: 8px;
+                line-height: 10px;
+                padding: 8px 10px;
+            }
+        }
+        .iti__selected-flag {
+            @media (min-width: 601px) and (max-width: 1601px) {
+                padding: 0 29px 0 10px !important;
+            }
+        }
+        .iti--allow-dropdown input, .iti--allow-dropdown input[type=text], .iti--allow-dropdown input[type=tel], .iti--separate-dial-code input, .iti--separate-dial-code input[type=text], .iti--separate-dial-code input[type=tel] {
+            @media (min-width: 601px) and (max-width: 1601px) {
+                padding-left: 50px !important;
+            }  
         }
         .inputmail {
             margin: 32px 0;
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                margin: 17px 0 22px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                margin: 12px 0 15px;
+            }
         }
         .button {
             border: none;
@@ -107,6 +166,19 @@
             justify-content: center;
             @media (min-width: 280px) and (max-width: 600px) {
                 order: 1;
+            }
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                width: 178.82px;
+                height: 37.06px;
+                font-size: 12px;
+                padding: 0;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 134px;
+                height: 26px;
+                font-size: 9px;
+                line-height: 156.9%;
+                padding: 0;
             }
         }
         textarea {
@@ -129,11 +201,19 @@
                 height: 189px;
                 margin-bottom: 30px;
             }
-            @media (min-width: 601px) and (max-width: 1200px) {
-                margin-left: 20px;
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                width: 235.29px;
+                height: 200.59px;
+                font-size: 10px;
+                line-height: 12px;
+                padding: 13px;
             }
-            @media (min-width: 601px) and (max-width: 750px) {
-                max-width: 250px;
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 164.71px;
+                height: 140.41px;
+                padding: 8px;
+                font-size: 8px;
+                line-height: 10px;
             }
         }
     }
@@ -142,9 +222,8 @@
         @media (min-width: 280px) and (max-width: 600px) {
             width: 100%;
         }
-        @media (min-width: 601px) and (max-width: 1700px) {
-            width: 100%;
-            margin-top: 60px;
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 48%;
         }
     }
     &__smalltitle {
@@ -161,6 +240,16 @@
             line-height: 17px;
             margin-top: 53px;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 34px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px)  {
+            font-size: 10px;
+            line-height: 12px;
+            margin-bottom: 24px;
+        }
     }
     &__frame {
         border: 2px solid #1189FF;
@@ -170,14 +259,32 @@
         right: 0;
         width: 920px;
         border-right: none;
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            min-height: 200.59px;
+            border: 2px solid #1189FF;
+            position: relative;
+            width: 100%;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            min-height: 140.41px;
+            width: 100%;
+            position: relative;
+            border: 2px solid #1189FF;
+            
+        }
         iframe {
             width: 920px;
             height: 333px;
             @media (min-width: 280px) and (max-width: 600px) {
                 width: 100%;
             }
-            @media (min-width: 601px) and (max-width: 1700px) {
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                height: 195px;
                 width: 100%;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 100%;
+                height: 140.41px;
             }
         }
         @media (min-width: 280px) and (max-width: 600px) {
@@ -185,7 +292,7 @@
             max-width: 100%;
             border: 2px solid #1189FF;
         }
-        @media (min-width: 601px) and (max-width: 1700px) {
+        @media (min-width: 1602px) and (max-width: 1700px) {
             position: relative;
             width: 100%; 
             border: 2px solid #1189FF;
@@ -205,6 +312,18 @@
             max-width: 241px;
             padding: 15px 20px;
         } 
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            max-width: 198.82px;
+            padding: 13px 12px;
+            bottom: 18px;
+            left: 20px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            max-width: 139.18px;
+            padding: 8px 8px;
+            bottom: 12px;
+            left: 14px;
+        }
     }
     &__contacts {
         .contacts__number {
@@ -214,12 +333,54 @@
                 line-height: 13px;
                 margin-left: 26px;
             }
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                font-size: 8px;
+                line-height: 12px;
+                margin-left: 25px;
+                &:after {
+                    width: 13px;
+                    height: 13px;
+                    background-size: contain;
+                    left: -21px;
+                }
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                font-size: 5.59999px;
+                line-height: 8px;
+                margin-left: 9px;
+                &:after {
+                    width: 6.05px;
+                    height: 6.05px;
+                    left: -9px;
+                }
+            }
         }
         .contacts__mail {
             margin-left: 40px;
             @media (min-width: 280px) and (max-width: 600px) {
                 font-size: 9px;
                 line-height: 13px;
+            }
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                font-size: 8px;
+                line-height: 12px;
+                margin-left: 25px;
+                &:after {
+                    width: 13px;
+                    height: 13px;
+                    background-size: contain;
+                    left: -21px;
+                }
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                font-size: 5.59999px;
+                line-height: 8px;
+                margin-left: 9px;
+                &:after {
+                    width: 6.05px;
+                    height: 6.05px;
+                    left: -9px;
+                }
             }
         }
         .contacts__adress {
@@ -229,6 +390,29 @@
                 font-size: 10px;
                 line-height: 14px;
                 margin-left: 26px;
+            }
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                font-size: 8px;
+                line-height: 12px;
+                margin-left: 25px;
+                margin-top: 11px;
+                &:after {
+                    width: 13px;
+                    height: 13px;
+                    background-size: contain;
+                    left: -21px;
+                }
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                font-size: 5.59999px;
+                line-height: 8px;
+                margin-left: 9px;
+                margin-top: 7px;
+                &:after {
+                    width: 6.05px;
+                    height: 6.05px;
+                    left: -9px;
+                }
             }
         }
     }

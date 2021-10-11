@@ -5,6 +5,12 @@
     @media (min-width: 280px) and (max-width: 600px) {
         padding-bottom: 45px; 
     }
+    @media (min-width: 1200px) and (max-width: 1601px) {
+        padding-bottom: 57px;
+    }
+    @media (min-width: 601px) and (max-width: 1199px) {
+        padding-bottom: 30px;
+    }
     &__card {
         width: 30%;
         background: #FFFFFF;
@@ -24,6 +30,25 @@
             min-height: 214px;
             padding: 38px 33px;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 320.45px;
+            min-height: 198.9px;
+            max-height: 198.9px;
+            min-width: 320.45px;
+            max-width: 320.45px;
+            padding: 35px 30px 39px 19px;
+            margin-right: 38px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 224px;
+            height: 190px;
+            min-width: 224px;
+            min-height: 190px;
+            max-width: 224px;
+            max-height: 190px;   
+            padding: 25px 20px; 
+            margin-right: 27px;        
+        }
     }
     &__text {
         font-family: 'Noto Sans', sans-serif;
@@ -38,6 +63,14 @@
             font-family: 'Roboto',sans-serif;
             font-size: 12px;
             max-width: 280px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            font-size: 11px;
+            line-height: 148.7%;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 10px;
+            line-height: 148.7%;
         }
     }
     &__info {
@@ -55,6 +88,14 @@
         @media (min-width: 280px) and (max-width: 600px) {
             width: 46px;
             height: 46px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 42.25px;
+            height: 42.25px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 29.58px;
+            height: 29.58px;
         }
     }
     &__name {
@@ -75,11 +116,31 @@
                 font-size: 12.5963px;
                 line-height: 15px;
             }
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 3px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                font-size: 8.4px;
+                line-height: 10px;
+                margin-top: 2px;
+            }
         }
         @media (min-width: 280px) and (max-width: 600px) {
             margin-right: 60px;
             font-size: 8.39757px;
             line-height: 10px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            font-size: 8px;
+            line-height: 9px;
+            margin-right: 60px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 5.6px;
+            line-height: 7px;
+            margin-right: 43px;
         }
     }
     &__stars {
@@ -88,6 +149,12 @@
         justify-content: space-between;
         @media (min-width: 280px) and (max-width: 600px) {
             width: 79px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 73.5px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 51px;
         }
         a {
             display: inline-flex;
@@ -100,6 +167,14 @@
             @media (min-width: 280px) and (max-width: 600px)  {
                 width: 13px;
                 height: 13px;
+            }
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                width: 12.35px;
+                height: 12.35px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 8.65px;
+                height: 8.65px;
             }
         }
     }

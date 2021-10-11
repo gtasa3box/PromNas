@@ -8,6 +8,12 @@
     @media (min-width: 601px) and (max-width: 1150px) {
         padding-top: 80px;
     }
+    @media (min-width: 1200px) and (max-width: 1601px) {
+        padding-top: 125px;
+    }
+    @media (min-width: 601px) and (max-width: 1199px) {
+        padding-top: 95px;
+    }
     &:before {
         content: '';
         background-image: url(../img/delivery/map.png);
@@ -25,12 +31,21 @@
             background-position: center;
             top: 440px;
         }
-        @media (min-width: 601px) and (max-width: 1500px) {
-            opacity: 0.5;
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 743px;
+            height: 578px;
+            top: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
         }
-        @media (min-width: 601px) and (max-width: 1150px) {
-            width: 100%;
-            top: 0;
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 470px;
+            height: 403px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            top: 90px;
         }
     }
     .wrapper {
@@ -42,8 +57,11 @@
         @media (min-width: 280px) and (max-width: 600px) {
             margin-top: 53px;
         }
-        @media (min-width: 601px) and (max-width: 1150px)  {
-            margin-top: 80px;
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            margin-top: 103px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-top: 68px;
         }
     }
     &__city {
@@ -55,6 +73,14 @@
         @media (min-width: 280px) and (max-width: 600px) {
             max-height: 390px;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            max-height: 327px;
+            max-width: 290px;
+        } 
+        @media (min-width: 601px) and (max-width: 1199px) {
+            max-height: 232px;
+            max-width: 233px;
+        }       
         a {
             font-family: 'Montserrat', sans-serif;
             font-style: normal;
@@ -71,6 +97,16 @@
                 font-size: 14px;
                 line-height: 17px;
                 margin-bottom: 27px;
+            }
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                font-size: 13px;
+                line-height: 16px;
+                margin-bottom: 24px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                font-size: 10px;
+                line-height: 12px;
+                margin-bottom: 16px;
             }
         }
     }

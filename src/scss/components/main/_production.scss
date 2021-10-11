@@ -26,6 +26,8 @@
     }
     &__button {
         margin-right: 20px;
+        width: 241px;
+        height: 42px;
         @media (min-width: 280px) and (max-width: 600px) {
             margin-right: 0;
             width: 100%;

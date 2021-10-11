@@ -124,6 +124,8 @@
     &__button {
         cursor: pointer;
         border-radius: 3px;
+        width: 119px;
+        height: 29px;
         @media (min-width: 280px) and (max-width: 600px) {
             font-size: 8px;
             line-height: 10px;
