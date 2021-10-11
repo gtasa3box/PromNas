@@ -10,6 +10,14 @@
         @media (min-width: 601px) and (max-width: 1000px) {
             font-size: 14px;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 10px;
+            line-height: 12px;
+        }
         a {
             color: #000000; 
         }
@@ -19,6 +27,12 @@
             border: 1px solid #000000;
             width: 100%;
             bottom: -5px;
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                bottom: -3px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                bottom: 0;
+            }
         }
         &:after {
             content: '';
@@ -31,6 +45,12 @@
             left: -33px;
             top: 50%;
             transform: translateY(-50%);
+            @media (min-width: 601px) and (max-width: 1601px) {
+                width: 13px;
+                height: 13px;
+                background-size: contain;
+                left: -21px;
+            }
         }
         &:hover {
             opacity: 0.8;
@@ -47,6 +67,14 @@
         @media (min-width: 601px) and (max-width: 1000px) {
             font-size: 12px;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 10px;
+            line-height: 12px;
+        }
         &:after {
             content: '';
             position: absolute;
@@ -58,6 +86,12 @@
             left: -36px;
             top: 50%;
             transform: translateY(-50%);
+            @media (min-width: 601px) and (max-width: 1601px) {
+                width: 13px;
+                height: 13px;
+                background-size: contain;
+                left: -21px;
+            }
         }
         &:hover {
             opacity: 0.8;

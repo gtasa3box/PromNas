@@ -10,6 +10,12 @@
         top: 0;
         background: linear-gradient(270deg, #1880E8 0%, #5AADFF 100%);
     }
+    @media (min-width: 1200px) and (max-width: 1601px) {
+        padding: 16px 0;
+    }
+    @media (min-width: 601px) and (max-width: 1199px) {
+        padding: 14px 0 10px;
+    }
     a {
         display: block;
         padding: 5px 10px 10px 6px;
