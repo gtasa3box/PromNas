@@ -1,31 +1,74 @@
-
-.select2-container--default .select2-selection--single {
-    background-color: #fff;
-    border: 1px solid #000000;
-    border-radius: 0;
-    height: 52px;
+select { 
+    display: block; 
     font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 156.9%;
     color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    @media (min-width: 280px) and (max-width: 600px) {
-        height: 32px;
+    padding: .6em 1.4em .5em .8em; width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+    margin: 0; 
+    border: 1px solid #000000;
+     box-shadow: 0 1px 0 1px rgba(0,0,0,.04); 
+     -moz-appearance: none;
+     -webkit-appearance: none;
+     appearance: none;
+     background-color: #fff; 
+    background-image: url(../img/select.svg); 
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%; 
+    @media (min-width: 1200px) and (max-width: 1601px) {
         font-size: 10px;
     }
-}
-.select2 .select2-container .select2-container--default {
-    width: 220px;
-}
-.select2-container--default .select2-selection--single .select2-selection__arrow {
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10px;
-}
-.select2-container .select2-selection--single .select2-selection__rendered {
-    padding-left: 18px;
+    @media (min-width: 601px) and (max-width: 1199px) {
+        font-size: 10px;
+    }
+    @media (min-width: 290px) and (max-width: 600px) {
+        font-size: 10px;
+    }
+} 
+select::-ms-expand { 
+    display: none; 
+} 
+select:hover { 
+    border-color: #888; 
+} 
+select:focus { 
+    border-color: #aaa; 
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring; 
+    color: #222;
+    outline: none; 
+} 
+select option { 
+    font-weight:normal; 
+} 
+*[dir="rtl"] select, :root:lang(ar) select, :root:lang(iw) select { 
+    background-position: left .7em top 50%, 0 0; 
+    padding: .6em .8em .5em 1.4em; 
 }
 
+.select-sort {
+    width: 220px;
+    height: 52px;
+    @media (min-width: 1200px) and (max-width: 1601px) {
+        width: 143px;
+        height: 33.8px;
+    }
+    @media (min-width: 601px) and (max-width: 1199px) {
+        width: 162px;
+        height: 32px;
+    }
+    @media (min-width: 290px) and (max-width: 600px) {
+        width: 162px;
+        height: 32px;
+    }
+}
+.select-charact {
+    &:not(:last-child) {
+        margin-bottom: 23px;
+    }
+}

@@ -4,6 +4,12 @@
     @media (min-width: 280px) and (max-width: 600px) {
         padding-bottom: 60px;
     }
+    @media (min-width: 1200px) and (max-width: 1601px) {
+        padding-bottom: 120px;
+    }
+    @media (min-width: 601px) and (max-width: 1199px) {
+        padding-bottom: 75px;
+    }
     &:before {
         content: '';
         background-image: url(../img/types-list/back.png);
@@ -16,6 +22,15 @@
         @media (min-width: 280px) and (max-width: 600px) {
             display: none;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 307px;
+            height: 506px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            display: none;
+        }
     }
     &__sort {
         display: flex;
@@ -24,11 +39,17 @@
         @media (min-width: 280px) and (max-width: 600px) {
             flex-wrap: wrap;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            margin-bottom: 33px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-bottom: 30px;
+        }
         .filters-view {
             display: none;
-            @media (min-width: 280px) and (max-width: 1000px) {
+            @media (min-width: 280px) and (max-width: 1199px) {
                 display: flex;
-                width: 144px;
+                width: 162px;
                 height: 32px;
                 position: relative;
                 padding: 8px 11px;
@@ -55,8 +76,8 @@
                     }
                 }
             }
-            @media (min-width: 601px) and (max-width: 1000px) {
-                height: 52px;
+            @media (min-width: 601px) and (max-width: 1199px) {
+                height: 32px;
                 display: flex;
                 align-items: center;
             }
@@ -76,14 +97,22 @@
                 height: 31px;
                 width: 31px;
             }
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                width: 33px;
+                height: 34px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 31px;
+                height: 32px;
+            }
             &:before {
                 content: '';
                 position: absolute;
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
-                width: 33px;
-                height: 33px;
+                width: 65%;
+                height: 65%;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
@@ -97,6 +126,12 @@
             margin-right: 20px;
             position: relative;
             @media (min-width: 280px) and (max-width: 600px) {
+                margin-right: 13px;
+            }
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                margin-right: 13px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
                 margin-right: 13px;
             }
             &:before {
@@ -145,6 +180,14 @@
             @media (min-width: 280px) and (max-width: 600px) {
                 margin-right: 0;
             }
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                font-size: 9px;
+                line-height: 11px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                font-size: 10px;
+                line-height: 12px;
+            }
         }
     }
 
@@ -159,13 +202,13 @@
     }
     &__left {
         width: 74%;
-        @media (min-width: 280px) and (max-width: 1000px) {
+        @media (min-width: 280px) and (max-width: 1199px) {
             width: 100%;
         }
     }
     &__right {
         width: 24%;
-        @media (min-width: 280px) and (max-width: 1000px) {
+        @media (min-width: 280px) and (max-width: 1199px) {
             display: none;
             width: 95%;
             position: absolute;
@@ -176,12 +219,9 @@
                 display: block;
             }
         }
-        @media (min-width: 601px) and (max-width: 750px) {
-            width: 97%;
-            top: 670px;
-        }
-        @media (min-width: 751px) and (max-width: 1000px) {
-            top: 600px;
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 50%;
+            top: 355px;
         }
     }
 }
