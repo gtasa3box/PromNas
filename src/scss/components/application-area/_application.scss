@@ -1,20 +1,31 @@
 .application {
     &__content {
+        margin: 0 -30px;
         margin-top: 125px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-wrap: wrap;
         @media (min-width: 280px) and (max-width: 600px) {
+            margin: 0 -4px;
             margin-top: 66px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            margin: 0 -20px;
+            margin-top: 66px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin: 0 -13px;
+            margin-top: 57px;
         }
     }
     &__card {
-        width: 30%;
+        width: 29%;
         background: #FFFFFF;
         border: 1px solid #1189FF;
         box-sizing: border-box;
         border-radius: 20px;
         padding: 50px 0 70px;
+        margin: 0 30px;
         margin-bottom: 60px;
         display: flex;
         flex-direction: column;
@@ -27,15 +38,24 @@
             width: 48%;
             min-height: 200px;
             padding: 16px 0 22px;
+            margin: 0 3px;
             margin-bottom: 20px;
         }
-        @media (min-width: 751px) and (max-width: 1050px) {
-            width: 45%;
-            min-height: 500px;
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 29%;
+            height: 392.98px;
+            margin: 0 20px;
+            margin-bottom: 40px;
+            padding: 33px 0 44px;
+            min-height: auto;
         }
-        @media (min-width: 601px) and (max-width: 750px) {
-            width: 45%;
-            min-height: 400px;
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 29%;
+            height: 274.82px;
+            margin: 0 15px;
+            margin-bottom: 30px;
+            padding: 23px 0 30px;
+            min-height: auto;
         }
     }
     &__cardtitle {
@@ -52,13 +72,15 @@
             font-size: 8px;
             line-height: 10px;
         }
-        @media (min-width: 751px) and (max-width: 1400px) {
-            max-width: 300px;
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            font-size: 15.615px;
+            line-height: 19px;
+            max-width: 238px;
         }
-        @media (min-width: 601px) and (max-width: 750px) {
-            max-width: 200px;
-            font-size: 17px;
-            line-height: 20px;
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 10.92px;
+            line-height: 13px;
+            max-width: 167px;
         }
     }
     &__img {
@@ -72,13 +94,13 @@
             width: 120px;
             height: 120px; 
         }
-        @media (min-width: 751px) and (max-width: 1400px) {
-            width: 300px;
-            height: 300px;
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 249.19px;
+            height: 249.84px;
         }
-        @media (min-width: 601px) and (max-width: 750px) {
-            width: 200px;
-            height: 200px;
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 174.26px;
+            height: 174.72px;
         }
     }
 }
