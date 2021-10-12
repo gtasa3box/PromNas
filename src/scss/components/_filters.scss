@@ -12,6 +12,12 @@
             font-size: 12px;
             line-height: 156.9%;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            font-size: 10px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 10px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -20,20 +26,20 @@
             bottom: -14px;
         }
     }
-    .select2-container {
-        &:not(:last-child) {
-            margin-bottom: 20px;
-            @media (min-width: 280px) and (max-width: 600px) {
-                margin-bottom: 10px;
-            }
-        }
-    }
     &__charact {
         margin-top: 42px;
         margin-bottom: 50px;
         @media (min-width: 280px) and (max-width: 600px) {
             margin-top: 20px;
             margin-bottom: 25px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            margin-top: 27px;
+            margin-bottom: 32px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-top: 27px;
+            margin-bottom: 32px;
         }
     }
     &__search {
@@ -49,14 +55,32 @@
             margin-top: 20px;
             margin-bottom: 25px;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            margin-top: 27px;
+            margin-bottom: 32px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-top: 27px;
+            margin-bottom: 32px;
+        }
         input {
-            padding: 12px 18px 14px;
+            padding: .6em 1.4em .5em .8em;
             background: #FFFFFF;
             border: 1px solid #000000;
             box-sizing: border-box;
             outline: none;
             width: 100%;
             height: 43px;
+            @media (min-width: 1200px) and (max-width: 1601px) {
+                height: 27.95px;
+                font-size: 9px;
+                line-height: 11px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                height: 27.95px;
+                font-size: 9px;
+                line-height: 11px;
+            }
             &:focus {
                 border: 1px solid #000000ab;
             }
@@ -64,7 +88,7 @@
         &:before {
             content: '';
             position: absolute;
-            background-image: url(../img/lupa.png);
+            background-image: url(../img/lupa.svg);
             width: 19px;
             height: 19px;
             background-size: contain;
@@ -88,11 +112,25 @@
             margin-top: 20px;
             margin-bottom: 25px;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            margin-top: 27px;
+            margin-bottom: 32px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-top: 27px;
+            margin-bottom: 32px;
+        }
         p {
             &:not(:last-child) {
                 margin-bottom: 20px;
                 @media (min-width: 280px) and (max-width: 600px) {
                     margin-bottom: 10px;  
+                }
+                @media (min-width: 1200px) and (max-width: 1601px) {
+                    margin-bottom: 15px;
+                }
+                @media (min-width: 601px) and (max-width: 1199px) {
+                    margin-bottom: 15px;
                 }
             }
         }
@@ -102,13 +140,50 @@
         @media (min-width: 280px) and (max-width: 600px) {
             margin-top: 20px;
         }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            margin-top: 34px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-top: 34px;
+        }
         p {
             &:not(:last-child) {
                 margin-bottom: 20px;
                 @media (min-width: 280px) and (max-width: 600px) {
                     margin-bottom: 10px;  
                 }
+                @media (min-width: 1200px) and (max-width: 1601px) {
+                    margin-bottom: 15px;
+                }
+                @media (min-width: 601px) and (max-width: 1199px) {
+                    margin-bottom: 15px;
+                }
             }
+        }
+    }
+    .label {
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(0, 0, 0, 0.8);
+        text-decoration: underline;
+        cursor: pointer;
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            font-size: 10px;
+            line-height: 12px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 10px;
+            line-height: 12px;
+        }
+        &:hover {
+            opacity: 0.8;
         }
     }
 }
