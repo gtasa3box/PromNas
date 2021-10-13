@@ -73,6 +73,9 @@
         &:before {
             width: 312px;
             bottom: -22px;
+            @media (min-width: 601px) and (max-width: 1601px) {
+                bottom: -10px;
+            }
         }
     }
     &_certificates {
