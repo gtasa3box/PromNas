@@ -82,3 +82,9 @@ $('#burger').on('click', function(){
 //burger-end
 
 //fast visible
+
+//filter close
+$('.types-list__right-close').on('click', function(){
+  $('.filters-view').removeClass('active')
+  $('.types-list__right').removeClass('active')
+});

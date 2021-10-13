@@ -13,6 +13,11 @@
     @media (min-width: 601px) and (max-width: 1325px) {
         width: auto;
     }
+    @media (min-width: 290px) and (max-width: 600px) {
+        width: 0;
+        height: 0;
+        display: none;
+    }
     &:before {
         content: '';
         position: absolute;

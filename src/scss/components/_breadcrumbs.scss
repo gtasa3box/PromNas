@@ -57,6 +57,10 @@
                     height: 9px;
                     right: -21px; 
                 }
+                @media (min-width: 601px) and (max-width: 1199px) {
+                    width: 6px;
+                    height: 11px;
+                }
             }
         }
     }
