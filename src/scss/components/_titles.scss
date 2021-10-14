@@ -97,6 +97,14 @@
             @media (min-width: 280px) and (max-width: 600px) {
                 width: 300px;
             }
+            @media (min-width: 1201px) and (max-width: 1601px) {
+                width: 400px;
+                bottom: -15px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                width: 350px;
+                bottom: -11px;
+            }
         }
     }
     &_basket {

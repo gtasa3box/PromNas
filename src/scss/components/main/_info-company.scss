@@ -421,9 +421,6 @@
         @media (min-width: 280px) and (max-width: 600px) {
             width: 100%;
         }
-        @media (min-width: 601px) and (max-width: 1700px) {
-            margin-top: 40px;
-        }
     }
     &__mapimg {
         display: block;
@@ -435,6 +432,14 @@
         @media (min-width: 280px) and (max-width: 600px) {
             width: 100%;
             height: 184px;
+        }
+        @media (min-width: 1201px) and (max-width: 1601px) {
+            width: 497.26px;
+            height: 265.56px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 348.15px;
+            height: 185.93px;
         }
     }
     &__city {
@@ -448,9 +453,13 @@
             margin-top: 46px;
             max-height: 400px;
         }
-        @media (min-width: 601px) and (max-width: 1300px) {
-            margin-top: 46px;
-            max-height: 400px;
+        @media (min-width: 1201px) and (max-width: 1601px) {
+            margin-top: 90px;
+            max-height: 165px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-top: 62px;
+            max-height: 120px;
         }
         a {
             font-family: 'Montserrat',sans-serif;
@@ -466,6 +475,16 @@
                 font-size: 14px;
                 line-height: 17px;
                 margin-bottom: 27px;
+            }
+            @media (min-width: 1201px) and (max-width: 1601px) {
+                font-size: 13px;
+                line-height: 16px;
+                margin-bottom: 26px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                font-size: 10px;
+                line-height: 12px;
+                margin-bottom: 19px;
             }
         }
     }
