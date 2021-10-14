@@ -149,6 +149,12 @@
                 border: 2px solid #236FBA;
                 bottom: -20px;
             }
+            @media (min-width: 1201px) and (max-width: 1601px) {
+                bottom: -15px;
+            }
+            @media (min-width: 601px) and (max-width: 1199px) {
+                bottom: -10px;
+            }
         }
         &-info {
             &:before {
