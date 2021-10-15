@@ -92,7 +92,7 @@
                 </div>
 
             </div>
-
+<!--char-->
             <div class="product-pads__char">
                 <div class="product-pads__charelem">
                     <p>Диаметр трубы (дюйм)</p>
@@ -119,18 +119,28 @@
                     <p>100</p>
                 </div>
             </div>
-
+<!--Reviews-->
             <div class="product-pads__reviews">
                 <h3 class="title title_none">Отзывы</h3>
                 <div class="product-pads__reviews-write">
-                    <div class="product-pads__rating">
-                        <p>4,6 <a></a><a></a><a></a><a></a><a></a></p>
-                        <span>17 отзывов</span>
+                    <div class="reviews__reviewsinfo">
+                        <div class="product-pads__rating">
+                            <p>4,6 <a></a><a></a><a></a><a></a><a></a></p>
+                            <span>17 отзывов</span>
+                        </div>
+                        <div class="product-pads__stars-void">
+                            <a></a><a></a><a></a><a></a><a></a>
+                        </div>
                     </div>
-                    <div class="product-pads__stars-void">
-                        <a></a><a></a><a></a><a></a><a></a>
-                    </div>
-                    <a class="product-pads__reviews-btn button">Написать отзыв</a>
+
+                    <form action="" class="form__reviews">
+                        <h4>Оставить отзыв</h4>
+                        <input type="name" placeholder="Имя">
+                        <input type="email" placeholder="Email">
+                        <textarea name="" placeholder="Отзыв"></textarea>
+                        <input type="submit" class="product-pads__reviews-btn button" value="Отправить">
+                    </form>
+
                     <div class="product-pads__rating-static">
                         <p class="ratio5">5<a></a></p>
                         <p class="ratio4">4<a></a></p>
