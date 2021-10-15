@@ -207,16 +207,34 @@ body {
       @media (min-width: 280px) and (max-width: 600px) {
         width: 100px;
       }
+      @media (min-width: 1200px) and (max-width: 1601px) {
+        width: 120px;
+      }
+      @media (min-width: 601px) and (max-width: 1199px) {
+        width: 84px;
+      }
       &:not(:last-child) {
         margin-right: 31px;
         @media (min-width: 280px) and (max-width: 600px) {
           margin-right: 20px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+          margin-right: 25px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+          margin-right: 17px;
         }
       }
       button {
         width: 151px;
         @media (min-width: 280px) and (max-width: 600px) {
           width: 100px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+          width: 120px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+          width: 84px;
         }
         &:before {
           background-color: black;
@@ -228,6 +246,12 @@ body {
           transform: translateY(-50%);
           @media (min-width: 280px) and (max-width: 600px) {
             width: 100px;
+          }
+          @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 120px;
+          }
+          @media (min-width: 601px) and (max-width: 1199px) {
+            width: 84px;
           }
         }
       }

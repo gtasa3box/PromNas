@@ -432,6 +432,20 @@
         }
     }
     &-slider {
+        margin-top: 30px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin-top: 0;
+            width: 163px;
+            height: 232.79px;
+        }
+        @media (min-width: 1200px) and (max-width: 1601px) {
+            width: 230.75px;
+            height: 329.55px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 161.41px;
+            height: 230.52px;
+        }
         .catalog-card {
             &__center {
                 display: flex;
