@@ -8,6 +8,9 @@
         max-width: 1040px;
         padding: 0;
     }
+    @media (min-width: 1380px) and (max-width: 1601px) {
+        max-width: 1120px;
+    }
     @media (min-width: 601px) and (max-width: 1199px) {
         padding: 0;
         max-width: 728px;
