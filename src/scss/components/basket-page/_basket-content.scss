@@ -87,6 +87,7 @@
         padding: 7px 46px 8px;
         border: 1px solid rgba(0, 0, 0, 0.7);
         border-top: none;
+        position: relative;
         @media (min-width: 280px) and (max-width: 600px) {
             flex-direction: column;
             padding: 0;
@@ -344,7 +345,6 @@
             margin-right: 19px;
         }
     }
-
     &__buttons {
         width: 100%;
         display: flex;
@@ -442,4 +442,43 @@
             line-height: 10px;
         }
     }
+
+    &__basket-del {
+        display: block;
+        position: absolute;
+        right: 45px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../img/basket-del.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 26px;
+            height: 26px;
+            right: 12px;
+            top: 56px;
+            transform: none;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 22px;
+            height: 22px;
+            right: 20px;
+        }
+        @media (min-width: 1201px) and (max-width: 1601px) {
+            width: 31px;
+            height: 31px;
+            right: 30px;
+        }
+        &:hover {
+            transform: translateY(-50%) rotate(20deg);
+            @media (min-width: 280px) and (max-width: 600px) {
+                transform: rotate(20deg);
+            }
+        }
+    } 
 }
