@@ -4,12 +4,25 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media (min-width: 601px) and (max-width: 1199px)  {
+            justify-content: flex-start;
+        }
     }
     &__form{
         width: 47%;
         margin-top: 123px;
-        @media (min-width: 280px) and (max-width: 600px) {
+        @media (min-width: 280px) and (max-width: 1199px) {
             width: 100%;
+        }
+        @media (min-width: 280px) and (max-width: 600px) {
+            margin-top: 56px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            margin-top: 49px;
+            max-width: 633px;
+        }
+        @media (min-width: 1201px) and (max-width: 1601px) {
+            margin-top: 70px;
         }
     }
     &__title {
@@ -21,6 +34,21 @@
         line-height: 35px;
         text-transform: uppercase;
         color: #000000;
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 30px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 12px;
+            line-height: 17px;
+            margin-bottom: 30px;
+        }
+        @media (min-width: 1201px) and (max-width: 1601px) {
+            font-size: 16px;
+            line-height: 23px;
+            margin-bottom: 40px;
+        }
     }
     &__dilivery {
         width: 100%;
@@ -50,7 +78,7 @@
         &__content {
             width: 48%;
             margin-top: 123px;
-            @media (min-width: 280px) and (max-width: 600px) {
+            @media (min-width: 280px) and (max-width: 1199px) {
                 width: 100%;
             }
         }
@@ -88,12 +116,64 @@
         border: 1px solid #1189FF;
         outline: none;
         padding: 22px;
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(0, 0, 0, 0.7);
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 254px;
+            height: 40px;
+            margin-bottom: 26px;
+            font-size: 11px;
+            line-height: 13px;
+            padding: 14px;
+        }
+        @media (min-width: 1201px) and (max-width: 1601px) {
+            width: 230.1px;
+            height: 39.65px;
+            margin-bottom: 26px;
+            padding: 14px;
+            font-size: 11px;
+            line-height: 13px;
+        }
+        &::placeholder {
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(0, 0, 0, 0.7);
+            @media (min-width: 601px) and (max-width: 1199px) {
+                font-size: 11px;
+                line-height: 13px;
+            }
+            @media (min-width: 1201px) and (max-width: 1601px) {
+                font-size: 11px;
+                line-height: 13px;
+            }
+        }
     }
     #companyname {
         width: 100%;
     }
     .iti--allow-dropdown {
         height: 61px;
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            height: 40px;
+        }
+        @media (min-width: 1201px) and (max-width: 1601px) {
+            height: 39.65px; 
+        }
     }
     textarea {
         height: 250px;
@@ -103,6 +183,40 @@
         resize: none;
         outline: none;
         padding: 22px;
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(0, 0, 0, 0.7);
+        @media (min-width: 601px) and (max-width: 1199px) {
+            height: 162px;
+            font-size: 11px;
+            line-height: 13px;
+            padding: 14px;
+        }
+        @media (min-width: 1201px) and (max-width: 1601px) {
+            font-size: 11px;
+            line-height: 13px;  
+            padding: 14px;
+            height: 162.5px;
+        }
+        &::placeholder {
+            font-family: 'Montserrat',sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(0, 0, 0, 0.7);
+            @media (min-width: 601px) and (max-width: 1199px) {
+                font-size: 11px;
+                line-height: 13px;    
+            }
+            @media (min-width: 1201px) and (max-width: 1601px) {
+                font-size: 11px;
+                line-height: 13px;  
+            }
+        }
     }
     p {
         font-family: 'Noto Sans',sans-serif;
@@ -112,9 +226,53 @@
         line-height: 150%;
         color: rgba(0, 0, 0, 0.7);
         margin: 40px 0;
+        @media (min-width: 280px) and (max-width: 600px) {
+            font-size: 12px;
+            margin: 30px 0;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            font-size: 12px;
+            margin: 26px 0;
+        }
+        @media (min-width: 1201px) and (max-width: 1601px) {
+            font-size: 14px;
+            margin: 26px 0;          
+        }
     }
     &__double {
         display: flex;
         justify-content: space-between;
+        @media (min-width: 280px) and (max-width: 600px) {
+            flex-wrap: wrap;
+        }
+    }
+    &__button {
+        width: 354px;
+        height: 61px;
+        border: none;
+        font-family: 'Montserrat',sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 156.9%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        @media (min-width: 280px) and (max-width: 600px) {
+            border-radius: 7px;
+            height: 48px;
+            width: 100%;
+            font-size: 14px;
+        }
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 230.1px;
+            height: 39.65px;
+            font-size: 12px;
+        }
+        @media (min-width: 1201px) and (max-width: 1601px) {
+            width: 230.1px;
+            height: 39.65px;
+            font-size: 12px;            
+        }
     }
 }
