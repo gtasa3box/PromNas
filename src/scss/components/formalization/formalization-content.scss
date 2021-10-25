@@ -102,6 +102,7 @@
         &__content {
             width: 48%;
             margin-top: 123px;
+            display: block;
             @media (min-width: 280px) and (max-width: 1199px) {
                 width: 100%;
             }
@@ -254,7 +255,7 @@
     input[type=number] {
         -moz-appearance: textfield;
     }
-    #companyname {
+    .companyname {
         width: 100%;
     }
     .iti--allow-dropdown {
@@ -320,18 +321,18 @@
         font-size: 18px;
         line-height: 150%;
         color: rgba(0, 0, 0, 0.7);
-        margin: 40px 0;
+        // margin: 40px 0;
         @media (min-width: 280px) and (max-width: 600px) {
             font-size: 12px;
-            margin: 30px 0;
+            // margin: 30px 0;
         }
         @media (min-width: 601px) and (max-width: 1199px) {
             font-size: 12px;
-            margin: 26px 0;
+            // margin: 26px 0;
         }
         @media (min-width: 1201px) and (max-width: 1601px) {
             font-size: 14px;
-            margin: 26px 0;          
+            // margin: 26px 0;          
         }
     }
     &__double {
@@ -369,5 +370,46 @@
             height: 39.65px;
             font-size: 12px;            
         }
+    }
+    //wp
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    label {
+        display: none;
+    }
+    p {
+        display: inline;
+        
+    }
+    #payment {
+        margin-top: 20px;
+        label {
+            display: block;
+        }
+    }
+    .woocommerce-terms-and-conditions-wrapper {
+        margin: 20px 0;
+    }
+    p {
+        width: 47%;
+        @media (min-width: 601px) and (max-width: 1199px) {
+            width: 40%;
+        }
+        @media (min-width: 280px) and (max-width: 600px) {
+            width: 100%;
+        }
+    }
+    #prim_field {
+        width: 100%;
+    }
+    #billing_company_field {
+        width: 100%;
+        input {
+            width: 100%;
+        }
+    }
+    #payment {
+        width: 100%;
     }
 }

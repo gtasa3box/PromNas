@@ -6,20 +6,33 @@
         <!--formalization-content-->
         <div class="formalization-content__form">
             <h4 class="formalization-content__title">ДЕТАЛИ ОПЛАТЫ</h4>
-            <form action="" class="formalization-form">
-                <div class="formalization-form__double">
-                    <input type="name" placeholder="Имя" required>
-                    <input type="text" placeholder="Фамилия" required>
-                </div>
-                <input id="companyname" type="text" placeholder="Название компании (необязательно)">
-                <div class="formalization-form__double">
-                    <input id="number2" type="number" placeholder="Номер телефона" required>
-                    <input type="email" placeholder="Еmail" required>
-                </div>
-                <textarea placeholder="Примечание к заказу (необязательно)"></textarea>
-                <p>- Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для других целей, описанных в нашей политика конфиденциальности.</p>
-                <button class="formalization-form__button button">Подтвердить заказ</button>
-            </form>
+            <!--wp-->
+            <div class="formalization-form woocommerce-billing-fields">
+             
+				<p class="form-row form-row-first validate-required validate-required" id="billing_first_name_field" data-validations="validate-required"><label for="billing_first_name" class="screen-reader-text">Имя <abbr class="required" title="required">*</abbr></label><input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="Имя" value=""></p><p class="form-row form-row-first validate-required validate-required" id="billing_last_name_field" data-validations="validate-required"><label for="billing_last_name" class="screen-reader-text">Фамилия <abbr class="required" title="required">*</abbr></label><input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="Фамилия" value=""></p><p class="form-row form-row-wide" id="billing_company_field" data-validations=""><label for="billing_company" class="screen-reader-text">Название компании</label><input type="text" class="input-text " name="billing_company" id="billing_company" placeholder="Название компании" value=""></p><p class="form-row form-row-first validate-required validate-phone" id="billing_phone_field" data-priority="40"><label for="billing_phone" class="screen-reader-text">Телефон&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="Телефон" value="" autocomplete="tel"></span></p><p class="form-row form-row-first validate-required validate-email" id="billing_email_field" data-priority="50"><label for="billing_email" class="screen-reader-text">Email&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="Email" value="" autocomplete="email"></span></p><p class="form-row form-row-wide validate-required" id="prim_field" data-priority="60"><label for="prim" class="screen-reader-text">Примечание к заказу (необязательно)&nbsp;<abbr class="required" title="обязательно">*</abbr></label><span class="woocommerce-input-wrapper"><textarea name="prim" class="input-text " id="prim" placeholder="Примечание к заказу (необязательно)" rows="2" cols="5"></textarea></span></p>              <div id="payment" style="background:none;border-radisu:unset;">
+			<ul class="wc_payment_methods payment_methods methods">
+			<li class="wc_payment_method payment_method_cod">
+	<input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod" checked="checked" data-order_button_text="" style="display: none;">
+
+	<label for="payment_method_cod">
+		Оплата по договоренности 	</label>
+	</li>
+		</ul>
+			<noscript>
+			Поскольку ваш браузер не поддерживает JavaScript или в нем он отключен, просим убедиться в том, что вы нажали кнопку <em>Обновить итог</em> перед регистрацией заказа. Иначе, есть риск неправильного подсчета стоимости.			<br/><button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="Обновить итог">Обновить итог</button>
+		</noscript>
+
+			<div class="woocommerce-terms-and-conditions-wrapper">
+		<div class="woocommerce-privacy-policy-text"><p>Ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для других целей, описанных в нашей <a href="https://test.prenmash.ru/?page_id=3" class="woocommerce-privacy-policy-link" target="_blank">политика конфиденциальности</a>.</p>
+</div>
+			</div>
+	
+		
+		<button type="submit" class="formalization-form__button button" name="woocommerce_checkout_place_order" id="place_order" value="Подтвердить заказ" data-value="Подтвердить заказ">Подтвердить заказ</button>
+		
+		<input type="hidden" id="woocommerce-process-checkout-nonce" name="woocommerce-process-checkout-nonce" value="0822aae8ca"><input type="hidden" name="_wp_http_referer" value="/checkout/"></div>
+	</div>
+    <!--wp-end-->
         </div>
         <!--basket-content-->
         <div class="basket-content__content">

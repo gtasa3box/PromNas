@@ -59,6 +59,9 @@
         letter-spacing: 0.015em;
         color: #000000;
         text-indent: 1.3em;
+        position: relative;
+        top: 30%;
+        transform: translateY(-50%);
         @media (min-width: 280px) and (max-width: 600px) {
             font-family: 'Roboto',sans-serif;
             font-size: 12px;
