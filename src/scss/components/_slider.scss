@@ -48,16 +48,16 @@ body {
   }
 }
 .slider-banner-image {
-  height: 722px;
+  height: 722px !important;
   padding-top: 60px;
   @media (min-width: 1201px) and (max-width: 1601px) {
-    height: 469.3px;
+    height: 469.3px !important;
   }
   @media (min-width: 601px) and (max-width: 1199px) {
-    height: 328.51px;
+    height: 328.51px !important;
   }
   @media (min-width: 280px) and (max-width: 600px) {
-    height: 368px;
+    height: 368px !important;
     padding-left: 30px;
   }
 }

@@ -224,7 +224,7 @@
             display: none;
             width: 95%;
             position: absolute;
-            top: 500px;
+            top: 350px;
             background-color: white;
             padding: 30px 10px;
             z-index: 4;
@@ -234,7 +234,7 @@
         }
         @media (min-width: 601px) and (max-width: 1199px) {
             width: 50%;
-            top: 355px;
+            top: 250px;
         }
         &-close {
             display: none;
