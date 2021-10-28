@@ -129,12 +129,10 @@
         border-radius: 7px;
         margin: 40px auto 0;
         font-size: 18px;
-        line-height: 156.9%;
         @media (max-width: 600px) {
             width: 305px;
             height: 48px;
             font-size: 14px;
-            line-height: 156.9%;
             margin: 29px auto 0;
         }
         @media (min-width: 601px) and (max-width: 1601px) {
@@ -142,7 +140,6 @@
             height: 37px;
             margin-top: 30px;
             font-size: 12px;
-            line-height: 156.9%;
         }
     }
     &.fancybox__content {
