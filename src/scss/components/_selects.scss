@@ -72,3 +72,12 @@ select option {
         margin-bottom: 23px;
     }
 }
+//select filtres margin
+.types-list__right {
+    select {
+        margin-bottom: 23px;
+    }
+    .filter__title {
+        display: none;
+    }
+}
