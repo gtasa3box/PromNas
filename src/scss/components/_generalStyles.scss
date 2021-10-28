@@ -3,6 +3,10 @@ button {
   -webkit-appearance: none;
   -moz-appearance:none;
 }
+input[type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance:none;
+}
 //flags to input tel
 
 .iti__flag {background-image: url("../img/flags.png");}
