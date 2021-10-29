@@ -52,6 +52,8 @@
                 height: 17px;
                 right: -31px;
                 pointer-events: none;
+                top: 50%;
+                transform: translateY(-50%);
                 @media (min-width: 280px) and (max-width: 600px) {
                     width: 5px;
                     height: 9px;

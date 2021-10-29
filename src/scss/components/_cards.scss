@@ -182,6 +182,9 @@
         margin: 0 10px;
         margin-bottom: 30px;
     }
+    @media (min-width: 280px) and (max-width: 371px) {
+        margin: 0 5px;
+    }
     @media (min-width: 1200px) and (max-width: 1601px) {
         min-width: auto;
         max-width: 229px;
