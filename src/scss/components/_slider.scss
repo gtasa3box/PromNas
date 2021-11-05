@@ -284,3 +284,8 @@ body {
     right: 0px;
   }
 }
+.product-page-slider .slick-slider .slick-track {
+  @media (min-width: 1200px) and (max-width: 1601px) {
+    margin: 0 !important; 
+  }
+}
