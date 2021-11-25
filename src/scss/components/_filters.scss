@@ -102,25 +102,25 @@
                 border: 1px solid #000000ab;
             }
         }
-        &:before {
-            content: '';
-            position: absolute;
-            background-image: url(../img/lupa.svg);
-            width: 19px;
-            height: 19px;
-            background-size: contain;
-            background-position: center;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 11px;
-            pointer-events: none;
-            transition: 0.3s ease;
-        }
-        &:hover {
-            &:before {
-                opacity: 0.8;
-            }
-        }  
+        // &:before {
+        //     content: '';
+        //     position: absolute;
+        //     background-image: url(../img/lupa.svg);
+        //     width: 19px;
+        //     height: 19px;
+        //     background-size: contain;
+        //     background-position: center;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     right: 11px;
+        //     pointer-events: none;
+        //     transition: 0.3s ease;
+        // }
+        // &:hover {
+        //     &:before {
+        //         opacity: 0.8;
+        //     }
+        // }  
     }
     //style ssilki categories
     .category_block_a {
@@ -219,5 +219,23 @@
 .filter {
     &__title {
         margin-top: 10px;
+    }
+}
+
+//lupa
+.filters__search #lupa_category {
+    position: absolute;
+    background-image: url(../img/lupa.svg);
+    width: 19px;
+    height: 19px;
+    background-size: contain;
+    background-position: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 11px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+        opacity: 0.8;
     }
 }

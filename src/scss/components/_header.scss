@@ -194,28 +194,28 @@
                 height: 26.07px;
             }
         }  
-        &:before {
-            content: '';
-            position: absolute;
-            background-image: url(../img/lupa.svg);
-            background-repeat: no-repeat;
-            width: 19px;
-            height: 19px;
-            background-size: contain;
-            background-position: center;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 11px;
-            pointer-events: none;
-            transition: 0.3s ease;
-            @media (min-width: 601px) and (max-width: 1601px) {
-                right: 7px;
-            }
-        }
+        // &:before {
+        //     content: '';
+        //     position: absolute;
+        //     background-image: url(../img/lupa.svg);
+        //     background-repeat: no-repeat;
+        //     width: 19px;
+        //     height: 19px;
+        //     background-size: contain;
+        //     background-position: center;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     right: 11px;
+        //     pointer-events: none;
+        //     transition: 0.3s ease;
+        //     @media (min-width: 601px) and (max-width: 1601px) {
+        //         right: 7px;
+        //     }
+        // }
         &:hover {
-            &:before {
-                opacity: 0.8;
-            }
+            // &:before {
+            //     opacity: 0.8;
+            // }
         }
     }
     &__contacts {
@@ -295,3 +295,23 @@
         }
     }
 }
+
+//lupa
+.header__search #lupa {
+    position: absolute;
+    background-image: url(../img/lupa.svg);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 19px;
+    background-size: contain;
+    background-position: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 11px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+    
